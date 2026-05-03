@@ -1,0 +1,21 @@
+# Raw dataset
+data/raw/
+
+# Environment variables
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS / editor
+.vscode/
+.DS_Store
+
+# Local database/data dumps
+*.sql.gz
+*.dump
+
+physionet.org/files/apnea-ecg/1.0.0
