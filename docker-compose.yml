@@ -7,8 +7,8 @@ services:
     restart: unless-stopped
 
     environment:
-      POSTGRES_USER: ${POSTGRES_USER:user}
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:password}
+      POSTGRES_USER: ${POSTGRES_USER:-user}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-password}
       POSTGRES_DB: ${POSTGRES_DB:-apnea_db}
       PGDATA: /var/lib/postgresql/data/pgdata
 
@@ -20,10 +20,35 @@ services:
       - ./database/postgresql/init:/docker-entrypoint-initdb.d:ro
 
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:user} -d ${POSTGRES_DB:-apnea_db}"]
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-user} -d ${POSTGRES_DB:-apnea_db}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  timescaledb:
+    image: timescale/timescaledb:latest-pg17
+    container_name: apnea_timescaledb
+    restart: unless-stopped
+
+    environment:
+      POSTGRES_USER: ${TIMESCALE_USER:-timescale_user}
+      POSTGRES_PASSWORD: ${TIMESCALE_PASSWORD:-timescale_password}
+      POSTGRES_DB: ${TIMESCALE_DB:-apnea_ts_db}
+      PGDATA: /var/lib/postgresql/data/pgdata
+
+    ports:
+      - "${TIMESCALE_PORT:-5433}:5432"
+
+    volumes:
+      - timescale_data:/var/lib/postgresql/data
+      - ./database/timeseries/init:/docker-entrypoint-initdb.d:ro
+
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${TIMESCALE_USER:-timescale_user} -d ${TIMESCALE_DB:-apnea_ts_db}"]
       interval: 10s
       timeout: 5s
       retries: 5
 
 volumes:
   postgres_data:
+  timescale_data:

@@ -54,6 +54,14 @@ mv physionet.org/files/apnea-ecg/1.0.0/* data/raw/
 rm -rf physionet.org
 ```
 
+### Organize the Dataset
+
+After moving the files, run the organize script to structure the data:
+
+```bash
+python scripts/organize_dataset.py
+```
+
 ### Create a `.env` File
 
 ```env
@@ -61,4 +69,8 @@ POSTGRES_USER=user
 POSTGRES_PASSWORD=password
 POSTGRES_DB=apnea_db
 POSTGRES_PORT=5432
+TIMESCALE_USER=user
+TIMESCALE_PASSWORD=password
+TIMESCALE_DB=apnea_ts_db
+TIMESCALE_PORT=5433
 ```
