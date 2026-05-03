@@ -34,6 +34,12 @@ def move_dataset_files(source_path: Path) -> None:
     files = [p for p in source_path.iterdir() if p.is_file()]
 
     if not files:
+        existing_raw_files = [p for p in RAW_DATA_PATH.iterdir() if p.is_file()]
+        if existing_raw_files:
+            print(f"No files found in {source_path}")
+            print(f"Detected existing files in {RAW_DATA_PATH}. Skipping move step.")
+            return
+
         print(f"No files found in {source_path}")
         sys.exit(1)
 
