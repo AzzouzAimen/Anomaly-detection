@@ -1,0 +1,10 @@
+[
+  {
+    "record_name": "a01",
+    "signal_rows": 1000,
+    "apnea_events": 489,
+    "qrs_events": 29938,
+    "duration_sec": 5.504206,
+    "errors": []
+  }
+]

@@ -21,7 +21,7 @@ import logging
 from dataclasses import dataclass, asdict
 from datetime import datetime, timedelta
 from pathlib import Path
-from typing import Iterator, List, Optional, Tuple
+from typing import Iterator, List, Optional
 import argparse
 
 try:
@@ -29,8 +29,6 @@ try:
 except ImportError:
     raise ImportError("wfdb not installed. Run: pip install wfdb")
 
-import pandas as pd
-import numpy as np
 from tqdm import tqdm
 
 # ============================================================================
@@ -122,6 +120,80 @@ def load_metadata() -> dict:
         return json.load(f)
 
 
+def resolve_signal_record_bases(record_name: str, metadata: dict) -> tuple[str, Optional[str]]:
+    """Resolve the ECG and respiration WFDB bases used to read signal files."""
+    record_meta = metadata.get(record_name, {})
+
+    ecg_base = record_name
+    resp_base = None
+
+    if record_meta.get("has_respiration"):
+        candidate = f"{record_name}r"
+        if (RAW_DIR / f"{candidate}.hea").exists():
+            resp_base = candidate
+
+    if not (RAW_DIR / f"{ecg_base}.hea").exists():
+        candidates: List[str] = []
+        selected_header = record_meta.get("selected_header_file")
+        if selected_header:
+            candidates.append(Path(selected_header).stem)
+        source_record = record_meta.get("source_record_name")
+        if source_record:
+            candidates.append(source_record)
+
+        for base_name in candidates:
+            if (RAW_DIR / f"{base_name}.hea").exists():
+                ecg_base = base_name
+                break
+        else:
+            raise FileNotFoundError(f"No ECG header file found for '{record_name}'.")
+
+    return ecg_base, resp_base
+
+
+def resolve_annotation_record_base(record_name: str, metadata: dict, ext: str) -> Optional[str]:
+    """Resolve the WFDB base name for annotation files (.apn/.qrs)."""
+    record_meta = metadata.get(record_name, {})
+    ext = ext.lstrip(".")
+
+    candidates: List[str] = []
+
+    candidates.append(record_name)
+
+    source_record = record_meta.get("source_record_name")
+    if source_record:
+        candidates.append(source_record)
+
+    selected_header = record_meta.get("selected_header_file")
+    if selected_header:
+        candidates.append(Path(selected_header).stem)
+
+    seen = set()
+    unique_candidates = []
+    for candidate in candidates:
+        if candidate and candidate not in seen:
+            seen.add(candidate)
+            unique_candidates.append(candidate)
+
+    for base_name in unique_candidates:
+        if (RAW_DIR / f"{base_name}.{ext}").exists():
+            return base_name
+
+    return None
+
+
+def _parse_apnea_label(ann: "wfdb.Annotation", idx: int) -> str:
+    """Extract apnea label from WFDB annotation using aux_note first, then symbol."""
+    label = ""
+    if getattr(ann, "aux_note", None) and idx < len(ann.aux_note):
+        label = (ann.aux_note[idx] or "").strip()
+
+    if not label and getattr(ann, "symbol", None) and idx < len(ann.symbol):
+        label = (ann.symbol[idx] or "").strip()
+
+    return label
+
+
 def create_timestamp(sample_index: int, sampling_rate_hz: int) -> datetime:
     """
     Generate synthetic timestamp.
@@ -151,6 +223,7 @@ def extract_signals(
     record_name: str,
     metadata: dict,
     batch_size: int = BATCH_SIZE,
+    max_samples: Optional[int] = None,
 ) -> Iterator[List[SignalRow]]:
     """
     Extract and yield signal batches from WFDB .dat file.
@@ -175,33 +248,42 @@ def extract_signals(
         FileNotFoundError: If .dat file not found
     """
     record_meta = metadata[record_name]
-    record_path = str(RAW_DIR / record_name)
+    ecg_base, resp_base = resolve_signal_record_bases(record_name, metadata)
+    record_path = str(RAW_DIR / ecg_base)
     sampling_rate = record_meta["sampling_rate_hz"]
     has_respiration = record_meta["has_respiration"]
     
-    logger.info(f"Extracting signals: {record_name} (has_respiration={has_respiration})")
+    logger.info(
+        f"Extracting signals: {record_name} (ecg_base={ecg_base}, resp_base={resp_base}, has_respiration={has_respiration})"
+    )
     
     try:
-        rec = wfdb.rdrecord(record_path)
+        rec_ecg = wfdb.rdrecord(record_path)
+        rec_resp = wfdb.rdrecord(str(RAW_DIR / resp_base)) if resp_base else None
     except Exception as e:
         logger.error(f"Failed to read record {record_name}: {e}")
         raise
     
-    total_samples = rec.sig_len
+    total_samples = rec_ecg.sig_len
+    if rec_resp is not None:
+        total_samples = min(total_samples, rec_resp.sig_len)
+    if max_samples is not None:
+        total_samples = min(total_samples, max_samples)
+
     batch = []
     
     for sample_idx in tqdm(range(total_samples), desc=f"Signals {record_name}"):
         recorded_at = create_timestamp(sample_idx, sampling_rate)
         
         # ECG is always channel 0
-        ecg_value = float(rec.p_signal[sample_idx, 0]) if rec.p_signal is not None else None
+        ecg_value = float(rec_ecg.p_signal[sample_idx, 0]) if rec_ecg.p_signal is not None else None
         
         # Respiration/SpO2 (channels 1–4) only if available
-        if has_respiration and rec.n_sig >= 5:
-            resp_c = float(rec.p_signal[sample_idx, 1])
-            resp_a = float(rec.p_signal[sample_idx, 2])
-            resp_n = float(rec.p_signal[sample_idx, 3])
-            spo2 = float(rec.p_signal[sample_idx, 4])
+        if has_respiration and rec_resp is not None and rec_resp.n_sig >= 4:
+            resp_c = float(rec_resp.p_signal[sample_idx, 0])
+            resp_a = float(rec_resp.p_signal[sample_idx, 1])
+            resp_n = float(rec_resp.p_signal[sample_idx, 2])
+            spo2 = float(rec_resp.p_signal[sample_idx, 3])
         else:
             resp_c = resp_a = resp_n = spo2 = None
         
@@ -256,16 +338,22 @@ def extract_apnea_annotations(
         logger.info(f"No apnea annotations for {record_name}")
         return []
     
+    ann_base = resolve_annotation_record_base(record_name, metadata, "apn")
+    if ann_base is None:
+        logger.warning(f"No .apn file found for {record_name}")
+        return []
+
     try:
-        ann = wfdb.rdann(str(RAW_DIR / record_name), "apn")
+        ann = wfdb.rdann(str(RAW_DIR / ann_base), "apn")
     except Exception as e:
         logger.warning(f"Could not read apnea annotations for {record_name}: {e}")
         return []
     
     events = []
-    for idx, (sample_idx, label) in enumerate(zip(ann.sample, ann.aux_note)):
+    for idx, sample_idx in enumerate(ann.sample):
         minute_index = idx
         recorded_at = create_timestamp(sample_idx, sampling_rate)
+        label = _parse_apnea_label(ann, idx)
         is_apnea = label.strip().lower() in {"a", "apnea", "1"}
         
         event = ApneaEvent(
@@ -303,8 +391,13 @@ def extract_qrs_annotations(
         logger.info(f"No QRS annotations for {record_name}")
         return []
     
+    ann_base = resolve_annotation_record_base(record_name, metadata, "qrs")
+    if ann_base is None:
+        logger.warning(f"No .qrs file found for {record_name}")
+        return []
+
     try:
-        ann = wfdb.rdann(str(RAW_DIR / record_name), "qrs")
+        ann = wfdb.rdann(str(RAW_DIR / ann_base), "qrs")
     except Exception as e:
         logger.warning(f"Could not read QRS annotations for {record_name}: {e}")
         return []
@@ -331,6 +424,7 @@ def process_record(
     record_name: str,
     metadata: dict,
     output_dir: Path,
+    max_samples: Optional[int] = None,
 ) -> ExtractionStats:
     """
     Extract, transform, and validate a single record (per SG05 ETL architecture).
@@ -370,7 +464,7 @@ def process_record(
         # Extract signals
         signal_output = output_dir / f"signals_{record_name}.jsonl"
         with open(signal_output, "w") as f:
-            for batch in extract_signals(record_name, metadata):
+            for batch in extract_signals(record_name, metadata, max_samples=max_samples):
                 signal_count += len(batch)
                 for row in batch:
                     f.write(json.dumps(asdict(row), default=str) + "\n")
@@ -413,6 +507,7 @@ def process_all_records(
     metadata: dict,
     output_dir: Path,
     records: Optional[List[str]] = None,
+    max_samples: Optional[int] = None,
 ) -> List[ExtractionStats]:
     """
     Extract all records (or subset).
@@ -431,7 +526,7 @@ def process_all_records(
     stats_list = []
     
     for record_name in tqdm(records, desc="Processing records"):
-        stats = process_record(record_name, metadata, output_dir)
+        stats = process_record(record_name, metadata, output_dir, max_samples=max_samples)
         stats_list.append(stats)
     
     # Summarize
@@ -470,6 +565,12 @@ def main():
         default="data/processed",
         help="Output directory for intermediate files.",
     )
+    parser.add_argument(
+        "--max-samples",
+        type=int,
+        default=None,
+        help="Optional cap on signal samples per record (useful for smoke tests).",
+    )
     
     args = parser.parse_args()
     
@@ -477,7 +578,17 @@ def main():
     
     records = [args.record] if args.record else None
     
-    stats_list = process_all_records(metadata, Path(args.output), records)
+    if records:
+        invalid = [r for r in records if r not in metadata]
+        if invalid:
+            raise ValueError(f"Unknown record(s): {invalid}")
+
+    stats_list = process_all_records(
+        metadata,
+        Path(args.output),
+        records,
+        max_samples=args.max_samples,
+    )
     
     # Save statistics
     stats_output = Path(args.output) / "extraction_stats.json"
