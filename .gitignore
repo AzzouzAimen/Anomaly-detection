@@ -18,4 +18,9 @@ venv/
 *.sql.gz
 *.dump
 
-physionet.org/files/apnea-ecg/1.0.0
+physionet.org  /files/apnea-ecg/1.0.0
+
+.ipynb_checkpoints/
+*-checkpoint.*
+
+.gitignore

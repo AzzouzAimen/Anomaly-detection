@@ -1,0 +1,9 @@
+# Sprint 2 Dependencies
+
+wfdb==4.1.2                    # WFDB format reading
+psycopg2-binary==2.9.9         # PostgreSQL driver
+pandas==2.0.3                  # Data manipulation
+numpy==1.24.3                  # Numerical operations
+matplotlib==3.7.1              # Chart generation
+python-dotenv==1.0.0           # .env file loading
+tqdm==4.65.0                   # Progress bars
