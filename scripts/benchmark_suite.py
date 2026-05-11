@@ -33,6 +33,24 @@ class DbConfig:
     is_timescale: bool
 
 
+def run_psql_command(container: str, database: str, user: str, sql: str) -> None:
+    command = [
+        "docker",
+        "exec",
+        container,
+        "psql",
+        "-U",
+        user,
+        "-d",
+        database,
+        "-v",
+        "ON_ERROR_STOP=1",
+        "-c",
+        sql,
+    ]
+    subprocess.run(command, capture_output=True, text=True, check=True)
+
+
 def run_psql_scalar(container: str, database: str, user: str, sql: str) -> str:
     command = [
         "docker",
@@ -80,7 +98,6 @@ def minute_bucket_sql(column: str, is_timescale: bool) -> str:
 
 def build_tests(db: DbConfig, record_id: str, start_ts: str) -> List[Tuple[str, str, int]]:
     minute_bucket = minute_bucket_sql("recorded_at", db.is_timescale)
-    one_hour_end = f"{start_ts}'::timestamp + INTERVAL '1 hour"
 
     tests: List[Tuple[str, str, int]] = []
 
@@ -139,16 +156,124 @@ def build_tests(db: DbConfig, record_id: str, start_ts: str) -> List[Tuple[str, 
     return tests
 
 
+def read_ingestion_metrics(db: DbConfig) -> Dict[str, Any]:
+    log_path = Path("database/timeseries/ingestion_log.json") if db.is_timescale else Path("database/postgresql/ingestion_log.json")
+    if not log_path.exists():
+        return {"available": False, "source": str(log_path)}
+
+    with open(log_path, "r", encoding="utf-8") as handle:
+        payload = json.load(handle)
+
+    tracked_tables = {"signals", "annotations_apnea", "annotations_qrs"}
+    per_table: Dict[str, Any] = {}
+    total_rows = 0
+    total_duration = 0.0
+
+    for stat in payload.get("stats", []):
+        table = stat.get("table")
+        if table not in tracked_tables:
+            continue
+
+        rows_inserted = int(stat.get("rows_inserted", 0))
+        duration_sec = float(stat.get("duration_sec", 0.0))
+        total_rows += rows_inserted
+        total_duration += duration_sec
+        per_table[table] = {
+            "rows_inserted": rows_inserted,
+            "duration_sec": duration_sec,
+            "rows_per_sec": (rows_inserted / duration_sec) if duration_sec > 0 else None,
+        }
+
+    per_table["total"] = {
+        "rows_inserted": total_rows,
+        "duration_sec": total_duration,
+        "rows_per_sec": (total_rows / total_duration) if total_duration > 0 else None,
+    }
+
+    return {
+        "available": True,
+        "source": str(log_path),
+        "tables": per_table,
+    }
+
+
+def ensure_timescale_signal_compression(db: DbConfig) -> int:
+    run_psql_command(
+        db.container,
+        db.database,
+        db.user,
+        (
+            "ALTER TABLE signals SET ("
+            "timescaledb.compress, "
+            "timescaledb.compress_segmentby = 'recording_id', "
+            "timescaledb.compress_orderby = 'recorded_at DESC'"
+            ");"
+        ),
+    )
+    run_psql_command(
+        db.container,
+        db.database,
+        db.user,
+        "SELECT add_compression_policy('signals', INTERVAL '1 day', if_not_exists => TRUE);",
+    )
+    compressed_chunks = run_psql_scalar(
+        db.container,
+        db.database,
+        db.user,
+        (
+            "SELECT COUNT(*) FROM ("
+            "SELECT compress_chunk(chunk, if_not_compressed => TRUE) "
+            "FROM show_chunks('signals') AS chunk"
+            ") AS compressed;"
+        ),
+    )
+    return int(compressed_chunks or 0)
+
+
 def get_storage_metrics(db: DbConfig) -> Dict[str, Any]:
     signals_bytes = int(run_psql_scalar(db.container, db.database, db.user, "SELECT pg_total_relation_size('signals');"))
     apnea_bytes = int(run_psql_scalar(db.container, db.database, db.user, "SELECT pg_total_relation_size('annotations_apnea');"))
     qrs_bytes = int(run_psql_scalar(db.container, db.database, db.user, "SELECT pg_total_relation_size('annotations_qrs');"))
-    return {
+    total_bytes = signals_bytes + apnea_bytes + qrs_bytes
+
+    storage = {
         "signals_bytes": signals_bytes,
         "annotations_apnea_bytes": apnea_bytes,
         "annotations_qrs_bytes": qrs_bytes,
-        "total_bytes": signals_bytes + apnea_bytes + qrs_bytes,
+        "total_bytes": total_bytes,
     }
+
+    if db.is_timescale:
+        pre_compression_signals_bytes = signals_bytes
+        pre_compression_total_bytes = total_bytes
+        compressed_chunks = ensure_timescale_signal_compression(db)
+        post_compression_signals_bytes = int(
+            run_psql_scalar(db.container, db.database, db.user, "SELECT pg_total_relation_size('signals');")
+        )
+        post_compression_total_bytes = post_compression_signals_bytes + apnea_bytes + qrs_bytes
+        storage.update(
+            {
+                "signals_bytes_pre_compression": pre_compression_signals_bytes,
+                "signals_bytes_post_compression": post_compression_signals_bytes,
+                "total_bytes_pre_compression": pre_compression_total_bytes,
+                "total_bytes_post_compression": post_compression_total_bytes,
+                "signals_compression_ratio": (
+                    pre_compression_signals_bytes / post_compression_signals_bytes
+                    if post_compression_signals_bytes > 0
+                    else None
+                ),
+                "total_compression_ratio": (
+                    pre_compression_total_bytes / post_compression_total_bytes
+                    if post_compression_total_bytes > 0
+                    else None
+                ),
+                "chunks_processed_for_compression": compressed_chunks,
+                "signals_bytes": post_compression_signals_bytes,
+                "total_bytes": post_compression_total_bytes,
+            }
+        )
+
+    return storage
 
 
 def benchmark_database(db: DbConfig, record_id: str, output_dir: Path) -> Dict[str, Any]:
@@ -171,6 +296,7 @@ def benchmark_database(db: DbConfig, record_id: str, output_dir: Path) -> Dict[s
         "database": db.name,
         "record_id": record_id,
         "results": [asdict(result) for result in results],
+        "write_throughput": read_ingestion_metrics(db),
         "storage": storage,
     }
 

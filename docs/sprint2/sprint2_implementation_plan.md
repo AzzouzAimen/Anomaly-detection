@@ -3,7 +3,7 @@
 ## Implementation Plan
 
 **Date**: May 8, 2026  
-**Status**: Planning Phase  
+**Status**: Planning Reference + Current Implementation Snapshot  
 **Target Duration**: 4-day sprint execution  
 **Input**: Sprint 1 Deliverables (Raw data, metadata baseline, dual database schemas)  
 **Output**: ETL pipeline, ingested data, comparative benchmarks
@@ -14,7 +14,7 @@
 
 1. ✅ Transform raw WFDB signals into structured relational/time-series format (per SG05 Architecture Document)
 2. ✅ Load the same processed data into both PostgreSQL and TimescaleDB (identical batches for fair comparison)
-3. ✅ Execute 6 standardized performance benchmarks (per SG05 Benchmarking Protocol)
+3. ✅ Capture the 6 benchmark categories defined by the Sprint 1 protocol
 4. ✅ Document all cleaning and transformation decisions with Sprint 1 architecture alignment
 5. ✅ Produce a detailed Comparative Benchmark Report (write throughput, query latency, storage efficiency)
 
@@ -177,6 +177,8 @@
 
 **File**: `scripts/benchmark_suite.py`
 
+**Current implementation note**: the repository currently times four SQL query classes directly, then adds write-throughput metrics from ingestion logs and storage/compression metrics to `benchmarks/summary.json` so the SG05 benchmark categories are still represented in one summary payload.
+
 **Tests**:
 
 ##### Test 1: Write Throughput (Already measured during ingestion)
@@ -188,7 +190,7 @@
 
 - Query: 1 hour of ECG for a single recording
 - Runs: 100 iterations, average latency
-- Targets: a01, a05, x01 (diverse record durations)
+- Current script default: `a01` (rerun with `--record` for additional representative records)
 - Expected: <100ms for TimescaleDB, varies for PostgreSQL
 
 ```sql
@@ -268,7 +270,8 @@ ORDER BY a.minute_index;
 
 **Expected Output**:
 
-- JSON file per test per database: `benchmarks/{test_name}_{db}.json`
+- `benchmarks/summary_postgresql.json`
+- `benchmarks/summary_timescaledb.json`
 - Aggregated: `benchmarks/summary.json`
 
 ---
@@ -281,7 +284,7 @@ ORDER BY a.minute_index;
 
 #### Phase 4.1: Benchmark Report Generation
 
-**File**: `scripts/generate_benchmark_report.py`
+**File**: `scripts/generate_benchmark_report.py` (planned, not present yet)
 
 **Outputs**:
 
@@ -341,7 +344,7 @@ ORDER BY a.minute_index;
 
 #### Phase 5.1: Data Integrity Checks
 
-**File**: `scripts/validate_ingestion.py`
+**File**: `scripts/validate_ingestion.py` (planned, not present yet)
 
 **Checks**:
 
@@ -365,9 +368,9 @@ scripts/
 ├── data_quality.py              # Data quality validation
 ├── ingest_postgresql.py         # PostgreSQL ingestion + timing
 ├── ingest_timescaledb.py        # TimescaleDB ingestion + compression
-├── benchmark_suite.py           # 6 standardized benchmark tests
-├── generate_benchmark_report.py # Report + charts generation
-├── validate_ingestion.py        # Post-ingestion integrity checks
+├── benchmark_suite.py           # Query timings + throughput/storage summary
+├── generate_benchmark_report.py # Planned: report + charts generation
+├── validate_ingestion.py        # Planned: post-ingestion integrity checks
 └── requirements_sprint2.txt     # Dependencies (wfdb, psycopg2, pandas, etc.)
 
 database/
@@ -377,11 +380,11 @@ database/
     └── ingestion_log.json       # Write performance metrics
 
 docs/sprint2/
-├── benchmark_report.md          # Main comparative report (Markdown)
-├── benchmark_report.pdf         # Main comparative report (PDF)
-├── benchmark_*.png              # Charts (latency, storage, etc.)
-├── benchmark_data.csv           # Raw benchmark data
-└── data_cleaning_log.md         # Cleaning decisions & anomalies
+├── SPRINT2_ALIGNMENT_WITH_SG05.md
+├── SPRINT2_EXECUTIVE_SUMMARY.md
+├── SPRINT2_FIXES_SUMMARY.md
+├── SPRINT2_QUICKSTART.md
+└── sprint2_implementation_plan.md
 ```
 
 ---
@@ -394,8 +397,8 @@ docs/sprint2/
 2. Run `etl_pipeline.py`
    → Extracts WFDB, generates batches
    ↓
-3. Run `data_quality.py`
-   → Validates signal/annotation integrity
+3. Run `data_quality.py` (planned)
+   → Validates signal/annotation integrity once implemented
    ↓
 4. Run `ingest_postgresql.py`
    → Loads data, measures write throughput
@@ -404,13 +407,13 @@ docs/sprint2/
    → Loads data, enables compression, measures impact
    ↓
 6. Run `benchmark_suite.py`
-   → Executes 6 tests on both databases
-   → Outputs JSON results
+   → Executes 4 timed SQL query benchmarks on the selected record
+   → Adds ingestion throughput and storage/compression metrics to the JSON summary
    ↓
-7. Run `validate_ingestion.py`
+7. Run `validate_ingestion.py` (planned)
    → Cross-database consistency checks
    ↓
-8. Run `generate_benchmark_report.py`
+8. Run `generate_benchmark_report.py` (planned)
    → Produces markdown, CSV, PNG charts
    ↓
 9. Write `data_cleaning_log.md`
@@ -418,10 +421,9 @@ docs/sprint2/
    ↓
 10. Final Sprint 2 deliverable package
     ├── Both databases with data
-    ├── benchmark_report.md
-    ├── benchmark_data.csv
-    ├── Charts (PNG)
-    └── data_cleaning_log.md
+   ├── benchmark summaries (JSON)
+   ├── final report artifacts (planned)
+   └── data_cleaning_log.md (planned)
 ```
 
 ---
@@ -432,8 +434,8 @@ docs/sprint2/
 | ------------------------------ | ------------------------------------------------- |
 | **All 70 records ingested**    | 100% success rate into both DBs                   |
 | **Data consistency**           | Row counts match between PostgreSQL & TimescaleDB |
-| **Benchmarks complete**        | All 6 tests executed, results logged              |
-| **Benchmark report published** | Markdown + CSV + charts                           |
+| **Benchmarks complete**        | Summary JSON produced with query, throughput, and storage metrics |
+| **Benchmark report published** | Markdown + CSV + charts (planned follow-up)       |
 | **Cleaning log documented**    | Complete explanation of transformations           |
 | **Code reproducible**          | Scripts run end-to-end with single command        |
 | **Validation passing**         | Zero integrity errors                             |
@@ -442,15 +444,14 @@ docs/sprint2/
 
 ## 7. Estimated Timeline
 
-| Phase                         | Week          | Days           | Effort          |
-| ----------------------------- | ------------- | -------------- | --------------- |
-| ETL Pipeline + Quality Checks | 1             | 3–4            | High            |
-| PostgreSQL Ingestion          | 1–2           | 1–2            | Medium          |
-| TimescaleDB Ingestion         | 1–2           | 1–2            | Medium          |
-| Benchmark Suite Execution     | 2             | 2–3            | High            |
-| Reporting & Analysis          | 2–3           | 2–3            | Medium          |
-| Validation & Cleanup          | 3             | 1–2            | Low             |
-| **Total**                     | **2–3 weeks** | **10–15 days** | **Medium–High** |
+| Phase                         | Sprint Day | Notes                                            |
+| ----------------------------- | ---------- | ------------------------------------------------ |
+| ETL Pipeline + Quality Checks | Day 1      | ETL script present; quality helper still planned |
+| PostgreSQL Ingestion          | Day 2      | Implemented                                      |
+| TimescaleDB Ingestion         | Day 2      | Implemented with deterministic compression       |
+| Benchmark Suite Execution     | Day 3      | Implemented summary workflow                     |
+| Reporting & Analysis          | Day 4      | Planned follow-up                                |
+| Validation & Cleanup          | Day 4      | Planned follow-up                                |
 
 ---
 
@@ -467,10 +468,10 @@ docs/sprint2/
    - PostgreSQL: `apnea_db` with ~206M signal rows
    - TimescaleDB: `apnea_ts_db` with same data, compressed
 
-3. **Comparative Benchmark Report**
+3. **Comparative Benchmark Summary**
    - Write throughput (rows/sec)
-   - Query latencies (6 tests)
-   - Storage efficiency (compression ratio)
+   - Query latencies (4 timed SQL tests in the current script)
+   - Storage efficiency (pre/post compression metrics)
    - Recommendations for production
 
 4. **Cleaning & Transformation Log**
@@ -482,7 +483,6 @@ docs/sprint2/
 5. **Code & Scripts**
    - Fully reproducible pipeline
    - Modular, reusable components
-   - Unit tests for critical functions
    - Requirements file for dependencies
 
 ---
@@ -502,16 +502,16 @@ docs/sprint2/
 ## 10. Next Steps
 
 1. **Approve this plan**
-2. **Create ETL module skeleton** (`etl_pipeline.py`)
+2. **Finish the remaining planned utilities** (`data_quality.py`, `validate_ingestion.py`, `generate_benchmark_report.py`)
 3. **Install dependencies** (`pip install -r requirements_sprint2.txt`)
-4. **Begin Phase 1** (ETL development)
+4. **Use the fixed ingestion CLI** (`--processed-dir`)
 5. **Track progress** in this document
 
 ---
 
 ## 11. References
 
-- [Sprint 1 Architecture Document](./architectureSprint1.md)
-- [Data Ingest Strategy](./sprint1/dataIngest.md)
-- [Benchmark Protocol](./sprint1/dataIngest.md#42-benchmarking-protocol)
-- [Dataset Baseline](../data/metadata/dataset_baseline.json)
+- [Sprint 1 Architecture Document](../architectureSprint1.md)
+- [Data Ingest Strategy](../sprint1/dataIngest.md)
+- [Benchmark Protocol](../sprint1/dataIngest.md#42-benchmarking-protocol)
+- [Dataset Baseline](../../data/metadata/dataset_baseline.json)

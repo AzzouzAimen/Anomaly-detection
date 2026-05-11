@@ -163,9 +163,9 @@ def copy_rows_psql(
     return len(rows)
 
 
-def record_exists_in_signals(container: str, database: str, user: str, recording_id: str) -> bool:
-    """Check if a recording_id already has signals loaded."""
-    query = f"SELECT 1 FROM signals WHERE recording_id = '{recording_id}' LIMIT 1;"
+def record_exists_in_table(container: str, database: str, user: str, table: str, recording_id: str) -> bool:
+    """Check if a recording_id already has rows in a specific table."""
+    query = f"SELECT 1 FROM {table} WHERE recording_id = '{recording_id}' LIMIT 1;"
     command = [
         "docker",
         "exec",
@@ -181,3 +181,18 @@ def record_exists_in_signals(container: str, database: str, user: str, recording
     ]
     result = subprocess.run(command, capture_output=True, text=True)
     return bool(result.stdout.strip())
+
+
+def record_exists_in_signals(container: str, database: str, user: str, recording_id: str) -> bool:
+    """Check if a recording_id already has signals loaded."""
+    return record_exists_in_table(container, database, user, "signals", recording_id)
+
+
+def record_exists_in_apnea_annotations(container: str, database: str, user: str, recording_id: str) -> bool:
+    """Check if a recording_id already has apnea annotations loaded."""
+    return record_exists_in_table(container, database, user, "annotations_apnea", recording_id)
+
+
+def record_exists_in_qrs_annotations(container: str, database: str, user: str, recording_id: str) -> bool:
+    """Check if a recording_id already has QRS annotations loaded."""
+    return record_exists_in_table(container, database, user, "annotations_qrs", recording_id)

@@ -16,6 +16,8 @@ from ingest_common import (
     copy_rows_psql,
     iso_now,
     load_json,
+    record_exists_in_apnea_annotations,
+    record_exists_in_qrs_annotations,
     read_json_array,
     record_exists_in_signals,
     recording_ids_from_processed_dir,
@@ -183,8 +185,12 @@ def load_annotations(container: str, database: str, user: str, processed_dir: Pa
     total = 0
     suffix = table_name.split('_', 1)[1]
     for record_id in record_ids:
-        # Skip if this record already has annotations loaded
-        if record_exists_in_signals(container, database, user, record_id):
+        if table_name == "annotations_apnea":
+            already_loaded = record_exists_in_apnea_annotations(container, database, user, record_id)
+        else:
+            already_loaded = record_exists_in_qrs_annotations(container, database, user, record_id)
+
+        if already_loaded:
             logger.info(f"Record {record_id} already has data, skipping {table_name}")
             continue
         
@@ -281,19 +287,17 @@ def run_load(
         stage_start = time.perf_counter()
         cleanup_existing_records(container, database, user, metadata, record_ids)
         stats.append(IngestionStats("cleanup", len(record_ids), time.perf_counter() - stage_start))
-        
-        stage_start = time.perf_counter()
-        subjects_rows = load_subjects(container, database, user, metadata, record_ids)
-        stats.append(IngestionStats("subjects", subjects_rows, time.perf_counter() - stage_start))
-
-        stage_start = time.perf_counter()
-        recording_rows = load_recordings(container, database, user, metadata, record_ids)
-        stats.append(IngestionStats("recordings", recording_rows, time.perf_counter() - stage_start))
     else:
-        logger.info("Skipping cleanup and metadata phases - resuming signal/annotation loading only")
+        logger.info("Skipping cleanup phase - resuming with idempotent metadata and data loads")
         stats.append(IngestionStats("cleanup", 0, 0))
-        stats.append(IngestionStats("subjects", 0, 0))
-        stats.append(IngestionStats("recordings", 0, 0))
+
+    stage_start = time.perf_counter()
+    subjects_rows = load_subjects(container, database, user, metadata, record_ids)
+    stats.append(IngestionStats("subjects", subjects_rows, time.perf_counter() - stage_start))
+
+    stage_start = time.perf_counter()
+    recording_rows = load_recordings(container, database, user, metadata, record_ids)
+    stats.append(IngestionStats("recordings", recording_rows, time.perf_counter() - stage_start))
 
     stage_start = time.perf_counter()
     signal_rows = load_signals(container, database, user, processed_dir, record_ids)

@@ -35,8 +35,9 @@ This document confirms that the Sprint 2 implementation plan aligns with the off
 | --------------------- | --------------------------------------------- | ------------------------------------------------------------------ |
 | **Dependency Order**  | subjects → recordings → signals → annotations | ✅ `ingest_postgresql.py` / `ingest_timescaledb.py` respects order |
 | **Batch Size**        | 100,000 rows per batch                        | ✅ Fixed 100K (not variable 10K-100K)                              |
-| **Insert Method**     | `psycopg2.extras.execute_values()` or `COPY`  | ✅ Both methods supported                                          |
+| **Insert Method**     | `psycopg2.extras.execute_values()` or `COPY`  | ✅ COPY-based loading is used in the current scripts               |
 | **Identical Loading** | Same batches to PostgreSQL & TimescaleDB      | ✅ Both scripts process identical ETL output                       |
+| **Resume Safety**     | Restart should not silently skip missing data | ✅ Per-table existence checks avoid skipping annotations on resume |
 
 #### 4. Database Architecture (per SG05 Architecture Document)
 
@@ -52,12 +53,12 @@ This document confirms that the Sprint 2 implementation plan aligns with the off
 
 | Test # | SG05 Name                       | Purpose                                           | Implementation                       |
 | ------ | ------------------------------- | ------------------------------------------------- | ------------------------------------ |
-| **1**  | Write Throughput                | Measure ingestion speed                           | ✅ Captured during ETL phase         |
+| **1**  | Write Throughput                | Measure ingestion speed                           | ✅ Captured during ingestion and surfaced in benchmark summaries |
 | **2**  | One-Hour Range Query            | Time-window retrieval (1h ECG)                    | ✅ 100 iterations, min/avg/max/stdev |
 | **3**  | Temporal Downsampling           | 1-minute aggregation (DATE_TRUNC vs. time_bucket) | ✅ 10 iterations per DB              |
 | **4**  | Event-Based Aggregation         | QRS heart rate (BPM per minute)                   | ✅ 10 iterations per DB              |
 | **5**  | Signal-to-Label Join            | Link high-freq signals to low-freq apnea labels   | ✅ 5 iterations (expensive)          |
-| **6**  | Storage Footprint & Compression | Disk size before/after TimescaleDB compression    | ✅ Measure compression ratio         |
+| **6**  | Storage Footprint & Compression | Disk size before/after TimescaleDB compression    | ✅ Existing chunks are explicitly compressed before measurement |
 
 #### 6. Synthetic Timestamps (per SG05 Architecture 3.1)
 
@@ -94,13 +95,13 @@ This document confirms that the Sprint 2 implementation plan aligns with the off
 | Chunks: TBD                     | Signals: 1-hour; Annotations: 1-day                                    | ✅ Specified in code                 |
 | Compression: TBD                | compress_segmentby='recording_id', compress_orderby='recorded_at DESC' | ✅ Exact config documented           |
 | Label mapping: TBD              | 'A'/'N' → TRUE/FALSE                                                   | ✅ String comparison rule documented |
-| Benchmark queries: Generic      | 6 specific tests with exact SQL                                        | ✅ SQL hardcoded per SG05 spec       |
+| Benchmark queries: Generic      | 6 benchmark categories with exact SQL where applicable                 | ✅ Query SQL is hardcoded and summary JSON includes throughput/storage |
 
 ---
 
 ## Conclusion
 
-**Status**: ✅ **PLAN FULLY ALIGNED WITH SG05 SPRINT 1 DELIVERABLES**
+**Status**: ✅ **PLAN ALIGNED; CURRENT IMPLEMENTATION NOW CLOSES THE MAIN HANDOFF GAPS**
 
 The Sprint 2 implementation plan is compatible with and fully leverages:
 
@@ -110,10 +111,61 @@ The Sprint 2 implementation plan is compatible with and fully leverages:
 4. Benchmarking protocol (6 standardized tests with specific SQL queries)
 5. Time-series design decisions (synthetic timestamps, chunking, compression)
 
-No substantial changes to the implementation plan are required. Proceed with:
+The latest repository fixes addressed the main inconsistencies that were affecting the Sprint 2 handoff:
+
+- ingestion resume no longer infers annotation completeness from the signals table
+- TimescaleDB compression is now applied deterministically to existing chunks before storage reporting
+- Sprint 2 docs now use the current script interfaces and reflect which helper scripts are still planned
+
+Proceed with:
 
 - **Phase 1**: ETL pipeline coding (etl_pipeline.py skeleton already created ✅)
 - **Phase 2**: Ingestion scripts (ingest_postgresql.py, ingest_timescaledb.py)
-- **Phase 3**: Benchmark suite (benchmark_suite.py with 6 tests)
+- **Phase 3**: Benchmark suite (benchmark_suite.py with query timings plus throughput/storage summaries)
 - **Phase 4**: Reporting & analysis (generate_benchmark_report.py)
 - **Phase 5**: Validation (validate_ingestion.py)
+- The benchmark summary also surfaces ingestion throughput from the ingestion logs.
+
+---
+
+## 3. Documentation Sync
+
+### Issue
+
+The Sprint 2 docs described commands, file paths, and helper scripts that did not match the repository anymore. The most visible examples were the wrong ingestion flag (`--source` instead of `--processed-dir`) and references to helper scripts that are still planned, not implemented.
+
+### Problem Snippet
+
+```bash
+python scripts/ingest_postgresql.py --source data/processed
+python scripts/ingest_timescaledb.py --source data/processed
+```
+
+### Fix
+
+The Sprint 2 docs now reflect the actual interfaces and current file set:
+
+- ingestion commands use `--processed-dir`
+- benchmark output is documented as summary JSON files
+- missing helper scripts are marked as planned instead of runnable
+- Sprint 2 doc references point to the actual files under `docs/sprint2/`
+
+### Solution Snippet
+
+```bash
+python scripts/ingest_postgresql.py --processed-dir data/processed
+python scripts/ingest_timescaledb.py --processed-dir data/processed
+```
+
+### Result
+
+- The quickstart and executive summary now match the repository.
+- The implementation plan and alignment note reflect the current implementation snapshot instead of an earlier placeholder state.
+
+---
+
+## Recap Of The 3 Fixes
+
+1. Ingestion resume logic is now safe for partial reruns because it checks table completeness per destination table instead of inferring completeness from `signals` alone.
+2. TimescaleDB compression metrics are now deterministic because the scripts explicitly compress existing signal chunks before reporting post-compression storage.
+3. Sprint 2 documentation now matches the current codebase, command-line interfaces, generated outputs, and the set of scripts that actually exist.
