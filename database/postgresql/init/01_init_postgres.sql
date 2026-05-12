@@ -57,7 +57,7 @@ CREATE TABLE recordings (
     sampling_rate_hz INTEGER NOT NULL DEFAULT 100,
     length_seconds INTEGER NOT NULL,
 
-    recording_start_time TIMESTAMP NOT NULL DEFAULT TIMESTAMP '2000-01-01 00:00:00',
+    recording_start_time TIMESTAMPTZ NOT NULL DEFAULT TIMESTAMPTZ '2000-01-01 00:00:00+00',
 
     CONSTRAINT chk_recordings_split
         CHECK (split IN ('learning', 'test')),
@@ -101,7 +101,7 @@ CREATE TABLE signals (
     recording_id VARCHAR(10) NOT NULL REFERENCES recordings(recording_id),
 
     sample_index BIGINT NOT NULL,
-    recorded_at TIMESTAMP NOT NULL,
+    recorded_at TIMESTAMPTZ NOT NULL,
 
     ecg_value DOUBLE PRECISION,
 
@@ -142,7 +142,7 @@ CREATE TABLE annotations_apnea (
     recording_id VARCHAR(10) NOT NULL REFERENCES recordings(recording_id),
 
     minute_index INTEGER NOT NULL,
-    recorded_at TIMESTAMP NOT NULL,
+    recorded_at TIMESTAMPTZ NOT NULL,
 
     label CHAR(1) NOT NULL,
     is_apnea BOOLEAN NOT NULL,
@@ -173,7 +173,7 @@ CREATE TABLE annotations_qrs (
     recording_id VARCHAR(10) NOT NULL REFERENCES recordings(recording_id),
 
     sample_index BIGINT NOT NULL,
-    recorded_at TIMESTAMP NOT NULL,
+    recorded_at TIMESTAMPTZ NOT NULL,
 
     PRIMARY KEY (recording_id, sample_index),
 

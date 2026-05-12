@@ -1,5 +1,6 @@
 # Raw dataset
 data/raw/
+data/processed/
 
 # Environment variables
 .env
@@ -17,6 +18,15 @@ venv/
 # Local database/data dumps
 *.sql.gz
 *.dump
+database/postgresql/ingestion_log.json
+database/timeseries/ingestion_log.json
+
+# Sprint 2 generated artifacts
+benchmarks/**/summary*.json
+benchmarks/**/comparative_report.md
+benchmarks/**/*.csv
+benchmarks/**/*.png
+exports/
 
 physionet.org  /files/apnea-ecg/1.0.0
 
