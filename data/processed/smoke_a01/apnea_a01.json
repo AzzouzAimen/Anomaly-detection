@@ -1,0 +1,3425 @@
+[
+  {
+    "recording_id": "a01",
+    "minute_index": 0,
+    "recorded_at": "2000-01-01 00:00:00",
+    "label": "N",
+    "is_apnea": false
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 1,
+    "recorded_at": "2000-01-01 00:01:00",
+    "label": "N",
+    "is_apnea": false
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 2,
+    "recorded_at": "2000-01-01 00:02:00",
+    "label": "N",
+    "is_apnea": false
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 3,
+    "recorded_at": "2000-01-01 00:03:00",
+    "label": "N",
+    "is_apnea": false
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 4,
+    "recorded_at": "2000-01-01 00:04:00",
+    "label": "N",
+    "is_apnea": false
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 5,
+    "recorded_at": "2000-01-01 00:05:00",
+    "label": "N",
+    "is_apnea": false
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 6,
+    "recorded_at": "2000-01-01 00:06:00",
+    "label": "N",
+    "is_apnea": false
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 7,
+    "recorded_at": "2000-01-01 00:07:00",
+    "label": "N",
+    "is_apnea": false
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 8,
+    "recorded_at": "2000-01-01 00:08:00",
+    "label": "N",
+    "is_apnea": false
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 9,
+    "recorded_at": "2000-01-01 00:09:00",
+    "label": "N",
+    "is_apnea": false
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 10,
+    "recorded_at": "2000-01-01 00:10:00",
+    "label": "N",
+    "is_apnea": false
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 11,
+    "recorded_at": "2000-01-01 00:11:00",
+    "label": "N",
+    "is_apnea": false
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 12,
+    "recorded_at": "2000-01-01 00:12:00",
+    "label": "N",
+    "is_apnea": false
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 13,
+    "recorded_at": "2000-01-01 00:13:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 14,
+    "recorded_at": "2000-01-01 00:14:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 15,
+    "recorded_at": "2000-01-01 00:15:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 16,
+    "recorded_at": "2000-01-01 00:16:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 17,
+    "recorded_at": "2000-01-01 00:17:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 18,
+    "recorded_at": "2000-01-01 00:18:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 19,
+    "recorded_at": "2000-01-01 00:19:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 20,
+    "recorded_at": "2000-01-01 00:20:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 21,
+    "recorded_at": "2000-01-01 00:21:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 22,
+    "recorded_at": "2000-01-01 00:22:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 23,
+    "recorded_at": "2000-01-01 00:23:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 24,
+    "recorded_at": "2000-01-01 00:24:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 25,
+    "recorded_at": "2000-01-01 00:25:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 26,
+    "recorded_at": "2000-01-01 00:26:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 27,
+    "recorded_at": "2000-01-01 00:27:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 28,
+    "recorded_at": "2000-01-01 00:28:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 29,
+    "recorded_at": "2000-01-01 00:29:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 30,
+    "recorded_at": "2000-01-01 00:30:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 31,
+    "recorded_at": "2000-01-01 00:31:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 32,
+    "recorded_at": "2000-01-01 00:32:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 33,
+    "recorded_at": "2000-01-01 00:33:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 34,
+    "recorded_at": "2000-01-01 00:34:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 35,
+    "recorded_at": "2000-01-01 00:35:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 36,
+    "recorded_at": "2000-01-01 00:36:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 37,
+    "recorded_at": "2000-01-01 00:37:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 38,
+    "recorded_at": "2000-01-01 00:38:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 39,
+    "recorded_at": "2000-01-01 00:39:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 40,
+    "recorded_at": "2000-01-01 00:40:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 41,
+    "recorded_at": "2000-01-01 00:41:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 42,
+    "recorded_at": "2000-01-01 00:42:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 43,
+    "recorded_at": "2000-01-01 00:43:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 44,
+    "recorded_at": "2000-01-01 00:44:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 45,
+    "recorded_at": "2000-01-01 00:45:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 46,
+    "recorded_at": "2000-01-01 00:46:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 47,
+    "recorded_at": "2000-01-01 00:47:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 48,
+    "recorded_at": "2000-01-01 00:48:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 49,
+    "recorded_at": "2000-01-01 00:49:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 50,
+    "recorded_at": "2000-01-01 00:50:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 51,
+    "recorded_at": "2000-01-01 00:51:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 52,
+    "recorded_at": "2000-01-01 00:52:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 53,
+    "recorded_at": "2000-01-01 00:53:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 54,
+    "recorded_at": "2000-01-01 00:54:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 55,
+    "recorded_at": "2000-01-01 00:55:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 56,
+    "recorded_at": "2000-01-01 00:56:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 57,
+    "recorded_at": "2000-01-01 00:57:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 58,
+    "recorded_at": "2000-01-01 00:58:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 59,
+    "recorded_at": "2000-01-01 00:59:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 60,
+    "recorded_at": "2000-01-01 01:00:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 61,
+    "recorded_at": "2000-01-01 01:01:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 62,
+    "recorded_at": "2000-01-01 01:02:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 63,
+    "recorded_at": "2000-01-01 01:03:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 64,
+    "recorded_at": "2000-01-01 01:04:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 65,
+    "recorded_at": "2000-01-01 01:05:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 66,
+    "recorded_at": "2000-01-01 01:06:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 67,
+    "recorded_at": "2000-01-01 01:07:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 68,
+    "recorded_at": "2000-01-01 01:08:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 69,
+    "recorded_at": "2000-01-01 01:09:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 70,
+    "recorded_at": "2000-01-01 01:10:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 71,
+    "recorded_at": "2000-01-01 01:11:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 72,
+    "recorded_at": "2000-01-01 01:12:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 73,
+    "recorded_at": "2000-01-01 01:13:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 74,
+    "recorded_at": "2000-01-01 01:14:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 75,
+    "recorded_at": "2000-01-01 01:15:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 76,
+    "recorded_at": "2000-01-01 01:16:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 77,
+    "recorded_at": "2000-01-01 01:17:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 78,
+    "recorded_at": "2000-01-01 01:18:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 79,
+    "recorded_at": "2000-01-01 01:19:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 80,
+    "recorded_at": "2000-01-01 01:20:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 81,
+    "recorded_at": "2000-01-01 01:21:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 82,
+    "recorded_at": "2000-01-01 01:22:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 83,
+    "recorded_at": "2000-01-01 01:23:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 84,
+    "recorded_at": "2000-01-01 01:24:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 85,
+    "recorded_at": "2000-01-01 01:25:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 86,
+    "recorded_at": "2000-01-01 01:26:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 87,
+    "recorded_at": "2000-01-01 01:27:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 88,
+    "recorded_at": "2000-01-01 01:28:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 89,
+    "recorded_at": "2000-01-01 01:29:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 90,
+    "recorded_at": "2000-01-01 01:30:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 91,
+    "recorded_at": "2000-01-01 01:31:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 92,
+    "recorded_at": "2000-01-01 01:32:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 93,
+    "recorded_at": "2000-01-01 01:33:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 94,
+    "recorded_at": "2000-01-01 01:34:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 95,
+    "recorded_at": "2000-01-01 01:35:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 96,
+    "recorded_at": "2000-01-01 01:36:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 97,
+    "recorded_at": "2000-01-01 01:37:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 98,
+    "recorded_at": "2000-01-01 01:38:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 99,
+    "recorded_at": "2000-01-01 01:39:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 100,
+    "recorded_at": "2000-01-01 01:40:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 101,
+    "recorded_at": "2000-01-01 01:41:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 102,
+    "recorded_at": "2000-01-01 01:42:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 103,
+    "recorded_at": "2000-01-01 01:43:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 104,
+    "recorded_at": "2000-01-01 01:44:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 105,
+    "recorded_at": "2000-01-01 01:45:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 106,
+    "recorded_at": "2000-01-01 01:46:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 107,
+    "recorded_at": "2000-01-01 01:47:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 108,
+    "recorded_at": "2000-01-01 01:48:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 109,
+    "recorded_at": "2000-01-01 01:49:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 110,
+    "recorded_at": "2000-01-01 01:50:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 111,
+    "recorded_at": "2000-01-01 01:51:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 112,
+    "recorded_at": "2000-01-01 01:52:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 113,
+    "recorded_at": "2000-01-01 01:53:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 114,
+    "recorded_at": "2000-01-01 01:54:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 115,
+    "recorded_at": "2000-01-01 01:55:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 116,
+    "recorded_at": "2000-01-01 01:56:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 117,
+    "recorded_at": "2000-01-01 01:57:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 118,
+    "recorded_at": "2000-01-01 01:58:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 119,
+    "recorded_at": "2000-01-01 01:59:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 120,
+    "recorded_at": "2000-01-01 02:00:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 121,
+    "recorded_at": "2000-01-01 02:01:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 122,
+    "recorded_at": "2000-01-01 02:02:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 123,
+    "recorded_at": "2000-01-01 02:03:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 124,
+    "recorded_at": "2000-01-01 02:04:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 125,
+    "recorded_at": "2000-01-01 02:05:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 126,
+    "recorded_at": "2000-01-01 02:06:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 127,
+    "recorded_at": "2000-01-01 02:07:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 128,
+    "recorded_at": "2000-01-01 02:08:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 129,
+    "recorded_at": "2000-01-01 02:09:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 130,
+    "recorded_at": "2000-01-01 02:10:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 131,
+    "recorded_at": "2000-01-01 02:11:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 132,
+    "recorded_at": "2000-01-01 02:12:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 133,
+    "recorded_at": "2000-01-01 02:13:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 134,
+    "recorded_at": "2000-01-01 02:14:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 135,
+    "recorded_at": "2000-01-01 02:15:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 136,
+    "recorded_at": "2000-01-01 02:16:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 137,
+    "recorded_at": "2000-01-01 02:17:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 138,
+    "recorded_at": "2000-01-01 02:18:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 139,
+    "recorded_at": "2000-01-01 02:19:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 140,
+    "recorded_at": "2000-01-01 02:20:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 141,
+    "recorded_at": "2000-01-01 02:21:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 142,
+    "recorded_at": "2000-01-01 02:22:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 143,
+    "recorded_at": "2000-01-01 02:23:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 144,
+    "recorded_at": "2000-01-01 02:24:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 145,
+    "recorded_at": "2000-01-01 02:25:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 146,
+    "recorded_at": "2000-01-01 02:26:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 147,
+    "recorded_at": "2000-01-01 02:27:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 148,
+    "recorded_at": "2000-01-01 02:28:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 149,
+    "recorded_at": "2000-01-01 02:29:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 150,
+    "recorded_at": "2000-01-01 02:30:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 151,
+    "recorded_at": "2000-01-01 02:31:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 152,
+    "recorded_at": "2000-01-01 02:32:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 153,
+    "recorded_at": "2000-01-01 02:33:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 154,
+    "recorded_at": "2000-01-01 02:34:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 155,
+    "recorded_at": "2000-01-01 02:35:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 156,
+    "recorded_at": "2000-01-01 02:36:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 157,
+    "recorded_at": "2000-01-01 02:37:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 158,
+    "recorded_at": "2000-01-01 02:38:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 159,
+    "recorded_at": "2000-01-01 02:39:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 160,
+    "recorded_at": "2000-01-01 02:40:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 161,
+    "recorded_at": "2000-01-01 02:41:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 162,
+    "recorded_at": "2000-01-01 02:42:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 163,
+    "recorded_at": "2000-01-01 02:43:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 164,
+    "recorded_at": "2000-01-01 02:44:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 165,
+    "recorded_at": "2000-01-01 02:45:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 166,
+    "recorded_at": "2000-01-01 02:46:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 167,
+    "recorded_at": "2000-01-01 02:47:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 168,
+    "recorded_at": "2000-01-01 02:48:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 169,
+    "recorded_at": "2000-01-01 02:49:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 170,
+    "recorded_at": "2000-01-01 02:50:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 171,
+    "recorded_at": "2000-01-01 02:51:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 172,
+    "recorded_at": "2000-01-01 02:52:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 173,
+    "recorded_at": "2000-01-01 02:53:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 174,
+    "recorded_at": "2000-01-01 02:54:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 175,
+    "recorded_at": "2000-01-01 02:55:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 176,
+    "recorded_at": "2000-01-01 02:56:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 177,
+    "recorded_at": "2000-01-01 02:57:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 178,
+    "recorded_at": "2000-01-01 02:58:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 179,
+    "recorded_at": "2000-01-01 02:59:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 180,
+    "recorded_at": "2000-01-01 03:00:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 181,
+    "recorded_at": "2000-01-01 03:01:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 182,
+    "recorded_at": "2000-01-01 03:02:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 183,
+    "recorded_at": "2000-01-01 03:03:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 184,
+    "recorded_at": "2000-01-01 03:04:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 185,
+    "recorded_at": "2000-01-01 03:05:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 186,
+    "recorded_at": "2000-01-01 03:06:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 187,
+    "recorded_at": "2000-01-01 03:07:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 188,
+    "recorded_at": "2000-01-01 03:08:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 189,
+    "recorded_at": "2000-01-01 03:09:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 190,
+    "recorded_at": "2000-01-01 03:10:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 191,
+    "recorded_at": "2000-01-01 03:11:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 192,
+    "recorded_at": "2000-01-01 03:12:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 193,
+    "recorded_at": "2000-01-01 03:13:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 194,
+    "recorded_at": "2000-01-01 03:14:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 195,
+    "recorded_at": "2000-01-01 03:15:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 196,
+    "recorded_at": "2000-01-01 03:16:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 197,
+    "recorded_at": "2000-01-01 03:17:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 198,
+    "recorded_at": "2000-01-01 03:18:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 199,
+    "recorded_at": "2000-01-01 03:19:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 200,
+    "recorded_at": "2000-01-01 03:20:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 201,
+    "recorded_at": "2000-01-01 03:21:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 202,
+    "recorded_at": "2000-01-01 03:22:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 203,
+    "recorded_at": "2000-01-01 03:23:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 204,
+    "recorded_at": "2000-01-01 03:24:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 205,
+    "recorded_at": "2000-01-01 03:25:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 206,
+    "recorded_at": "2000-01-01 03:26:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 207,
+    "recorded_at": "2000-01-01 03:27:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 208,
+    "recorded_at": "2000-01-01 03:28:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 209,
+    "recorded_at": "2000-01-01 03:29:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 210,
+    "recorded_at": "2000-01-01 03:30:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 211,
+    "recorded_at": "2000-01-01 03:31:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 212,
+    "recorded_at": "2000-01-01 03:32:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 213,
+    "recorded_at": "2000-01-01 03:33:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 214,
+    "recorded_at": "2000-01-01 03:34:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 215,
+    "recorded_at": "2000-01-01 03:35:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 216,
+    "recorded_at": "2000-01-01 03:36:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 217,
+    "recorded_at": "2000-01-01 03:37:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 218,
+    "recorded_at": "2000-01-01 03:38:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 219,
+    "recorded_at": "2000-01-01 03:39:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 220,
+    "recorded_at": "2000-01-01 03:40:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 221,
+    "recorded_at": "2000-01-01 03:41:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 222,
+    "recorded_at": "2000-01-01 03:42:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 223,
+    "recorded_at": "2000-01-01 03:43:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 224,
+    "recorded_at": "2000-01-01 03:44:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 225,
+    "recorded_at": "2000-01-01 03:45:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 226,
+    "recorded_at": "2000-01-01 03:46:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 227,
+    "recorded_at": "2000-01-01 03:47:00",
+    "label": "N",
+    "is_apnea": false
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 228,
+    "recorded_at": "2000-01-01 03:48:00",
+    "label": "N",
+    "is_apnea": false
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 229,
+    "recorded_at": "2000-01-01 03:49:00",
+    "label": "N",
+    "is_apnea": false
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 230,
+    "recorded_at": "2000-01-01 03:50:00",
+    "label": "N",
+    "is_apnea": false
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 231,
+    "recorded_at": "2000-01-01 03:51:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 232,
+    "recorded_at": "2000-01-01 03:52:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 233,
+    "recorded_at": "2000-01-01 03:53:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 234,
+    "recorded_at": "2000-01-01 03:54:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 235,
+    "recorded_at": "2000-01-01 03:55:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 236,
+    "recorded_at": "2000-01-01 03:56:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 237,
+    "recorded_at": "2000-01-01 03:57:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 238,
+    "recorded_at": "2000-01-01 03:58:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 239,
+    "recorded_at": "2000-01-01 03:59:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 240,
+    "recorded_at": "2000-01-01 04:00:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 241,
+    "recorded_at": "2000-01-01 04:01:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 242,
+    "recorded_at": "2000-01-01 04:02:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 243,
+    "recorded_at": "2000-01-01 04:03:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 244,
+    "recorded_at": "2000-01-01 04:04:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 245,
+    "recorded_at": "2000-01-01 04:05:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 246,
+    "recorded_at": "2000-01-01 04:06:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 247,
+    "recorded_at": "2000-01-01 04:07:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 248,
+    "recorded_at": "2000-01-01 04:08:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 249,
+    "recorded_at": "2000-01-01 04:09:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 250,
+    "recorded_at": "2000-01-01 04:10:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 251,
+    "recorded_at": "2000-01-01 04:11:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 252,
+    "recorded_at": "2000-01-01 04:12:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 253,
+    "recorded_at": "2000-01-01 04:13:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 254,
+    "recorded_at": "2000-01-01 04:14:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 255,
+    "recorded_at": "2000-01-01 04:15:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 256,
+    "recorded_at": "2000-01-01 04:16:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 257,
+    "recorded_at": "2000-01-01 04:17:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 258,
+    "recorded_at": "2000-01-01 04:18:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 259,
+    "recorded_at": "2000-01-01 04:19:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 260,
+    "recorded_at": "2000-01-01 04:20:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 261,
+    "recorded_at": "2000-01-01 04:21:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 262,
+    "recorded_at": "2000-01-01 04:22:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 263,
+    "recorded_at": "2000-01-01 04:23:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 264,
+    "recorded_at": "2000-01-01 04:24:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 265,
+    "recorded_at": "2000-01-01 04:25:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 266,
+    "recorded_at": "2000-01-01 04:26:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 267,
+    "recorded_at": "2000-01-01 04:27:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 268,
+    "recorded_at": "2000-01-01 04:28:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 269,
+    "recorded_at": "2000-01-01 04:29:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 270,
+    "recorded_at": "2000-01-01 04:30:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 271,
+    "recorded_at": "2000-01-01 04:31:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 272,
+    "recorded_at": "2000-01-01 04:32:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 273,
+    "recorded_at": "2000-01-01 04:33:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 274,
+    "recorded_at": "2000-01-01 04:34:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 275,
+    "recorded_at": "2000-01-01 04:35:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 276,
+    "recorded_at": "2000-01-01 04:36:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 277,
+    "recorded_at": "2000-01-01 04:37:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 278,
+    "recorded_at": "2000-01-01 04:38:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 279,
+    "recorded_at": "2000-01-01 04:39:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 280,
+    "recorded_at": "2000-01-01 04:40:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 281,
+    "recorded_at": "2000-01-01 04:41:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 282,
+    "recorded_at": "2000-01-01 04:42:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 283,
+    "recorded_at": "2000-01-01 04:43:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 284,
+    "recorded_at": "2000-01-01 04:44:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 285,
+    "recorded_at": "2000-01-01 04:45:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 286,
+    "recorded_at": "2000-01-01 04:46:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 287,
+    "recorded_at": "2000-01-01 04:47:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 288,
+    "recorded_at": "2000-01-01 04:48:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 289,
+    "recorded_at": "2000-01-01 04:49:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 290,
+    "recorded_at": "2000-01-01 04:50:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 291,
+    "recorded_at": "2000-01-01 04:51:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 292,
+    "recorded_at": "2000-01-01 04:52:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 293,
+    "recorded_at": "2000-01-01 04:53:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 294,
+    "recorded_at": "2000-01-01 04:54:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 295,
+    "recorded_at": "2000-01-01 04:55:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 296,
+    "recorded_at": "2000-01-01 04:56:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 297,
+    "recorded_at": "2000-01-01 04:57:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 298,
+    "recorded_at": "2000-01-01 04:58:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 299,
+    "recorded_at": "2000-01-01 04:59:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 300,
+    "recorded_at": "2000-01-01 05:00:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 301,
+    "recorded_at": "2000-01-01 05:01:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 302,
+    "recorded_at": "2000-01-01 05:02:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 303,
+    "recorded_at": "2000-01-01 05:03:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 304,
+    "recorded_at": "2000-01-01 05:04:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 305,
+    "recorded_at": "2000-01-01 05:05:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 306,
+    "recorded_at": "2000-01-01 05:06:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 307,
+    "recorded_at": "2000-01-01 05:07:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 308,
+    "recorded_at": "2000-01-01 05:08:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 309,
+    "recorded_at": "2000-01-01 05:09:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 310,
+    "recorded_at": "2000-01-01 05:10:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 311,
+    "recorded_at": "2000-01-01 05:11:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 312,
+    "recorded_at": "2000-01-01 05:12:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 313,
+    "recorded_at": "2000-01-01 05:13:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 314,
+    "recorded_at": "2000-01-01 05:14:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 315,
+    "recorded_at": "2000-01-01 05:15:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 316,
+    "recorded_at": "2000-01-01 05:16:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 317,
+    "recorded_at": "2000-01-01 05:17:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 318,
+    "recorded_at": "2000-01-01 05:18:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 319,
+    "recorded_at": "2000-01-01 05:19:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 320,
+    "recorded_at": "2000-01-01 05:20:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 321,
+    "recorded_at": "2000-01-01 05:21:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 322,
+    "recorded_at": "2000-01-01 05:22:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 323,
+    "recorded_at": "2000-01-01 05:23:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 324,
+    "recorded_at": "2000-01-01 05:24:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 325,
+    "recorded_at": "2000-01-01 05:25:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 326,
+    "recorded_at": "2000-01-01 05:26:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 327,
+    "recorded_at": "2000-01-01 05:27:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 328,
+    "recorded_at": "2000-01-01 05:28:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 329,
+    "recorded_at": "2000-01-01 05:29:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 330,
+    "recorded_at": "2000-01-01 05:30:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 331,
+    "recorded_at": "2000-01-01 05:31:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 332,
+    "recorded_at": "2000-01-01 05:32:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 333,
+    "recorded_at": "2000-01-01 05:33:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 334,
+    "recorded_at": "2000-01-01 05:34:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 335,
+    "recorded_at": "2000-01-01 05:35:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 336,
+    "recorded_at": "2000-01-01 05:36:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 337,
+    "recorded_at": "2000-01-01 05:37:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 338,
+    "recorded_at": "2000-01-01 05:38:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 339,
+    "recorded_at": "2000-01-01 05:39:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 340,
+    "recorded_at": "2000-01-01 05:40:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 341,
+    "recorded_at": "2000-01-01 05:41:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 342,
+    "recorded_at": "2000-01-01 05:42:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 343,
+    "recorded_at": "2000-01-01 05:43:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 344,
+    "recorded_at": "2000-01-01 05:44:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 345,
+    "recorded_at": "2000-01-01 05:45:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 346,
+    "recorded_at": "2000-01-01 05:46:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 347,
+    "recorded_at": "2000-01-01 05:47:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 348,
+    "recorded_at": "2000-01-01 05:48:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 349,
+    "recorded_at": "2000-01-01 05:49:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 350,
+    "recorded_at": "2000-01-01 05:50:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 351,
+    "recorded_at": "2000-01-01 05:51:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 352,
+    "recorded_at": "2000-01-01 05:52:00",
+    "label": "N",
+    "is_apnea": false
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 353,
+    "recorded_at": "2000-01-01 05:53:00",
+    "label": "N",
+    "is_apnea": false
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 354,
+    "recorded_at": "2000-01-01 05:54:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 355,
+    "recorded_at": "2000-01-01 05:55:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 356,
+    "recorded_at": "2000-01-01 05:56:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 357,
+    "recorded_at": "2000-01-01 05:57:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 358,
+    "recorded_at": "2000-01-01 05:58:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 359,
+    "recorded_at": "2000-01-01 05:59:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 360,
+    "recorded_at": "2000-01-01 06:00:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 361,
+    "recorded_at": "2000-01-01 06:01:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 362,
+    "recorded_at": "2000-01-01 06:02:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 363,
+    "recorded_at": "2000-01-01 06:03:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 364,
+    "recorded_at": "2000-01-01 06:04:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 365,
+    "recorded_at": "2000-01-01 06:05:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 366,
+    "recorded_at": "2000-01-01 06:06:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 367,
+    "recorded_at": "2000-01-01 06:07:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 368,
+    "recorded_at": "2000-01-01 06:08:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 369,
+    "recorded_at": "2000-01-01 06:09:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 370,
+    "recorded_at": "2000-01-01 06:10:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 371,
+    "recorded_at": "2000-01-01 06:11:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 372,
+    "recorded_at": "2000-01-01 06:12:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 373,
+    "recorded_at": "2000-01-01 06:13:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 374,
+    "recorded_at": "2000-01-01 06:14:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 375,
+    "recorded_at": "2000-01-01 06:15:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 376,
+    "recorded_at": "2000-01-01 06:16:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 377,
+    "recorded_at": "2000-01-01 06:17:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 378,
+    "recorded_at": "2000-01-01 06:18:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 379,
+    "recorded_at": "2000-01-01 06:19:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 380,
+    "recorded_at": "2000-01-01 06:20:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 381,
+    "recorded_at": "2000-01-01 06:21:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 382,
+    "recorded_at": "2000-01-01 06:22:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 383,
+    "recorded_at": "2000-01-01 06:23:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 384,
+    "recorded_at": "2000-01-01 06:24:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 385,
+    "recorded_at": "2000-01-01 06:25:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 386,
+    "recorded_at": "2000-01-01 06:26:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 387,
+    "recorded_at": "2000-01-01 06:27:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 388,
+    "recorded_at": "2000-01-01 06:28:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 389,
+    "recorded_at": "2000-01-01 06:29:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 390,
+    "recorded_at": "2000-01-01 06:30:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 391,
+    "recorded_at": "2000-01-01 06:31:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 392,
+    "recorded_at": "2000-01-01 06:32:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 393,
+    "recorded_at": "2000-01-01 06:33:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 394,
+    "recorded_at": "2000-01-01 06:34:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 395,
+    "recorded_at": "2000-01-01 06:35:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 396,
+    "recorded_at": "2000-01-01 06:36:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 397,
+    "recorded_at": "2000-01-01 06:37:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 398,
+    "recorded_at": "2000-01-01 06:38:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 399,
+    "recorded_at": "2000-01-01 06:39:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 400,
+    "recorded_at": "2000-01-01 06:40:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 401,
+    "recorded_at": "2000-01-01 06:41:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 402,
+    "recorded_at": "2000-01-01 06:42:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 403,
+    "recorded_at": "2000-01-01 06:43:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 404,
+    "recorded_at": "2000-01-01 06:44:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 405,
+    "recorded_at": "2000-01-01 06:45:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 406,
+    "recorded_at": "2000-01-01 06:46:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 407,
+    "recorded_at": "2000-01-01 06:47:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 408,
+    "recorded_at": "2000-01-01 06:48:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 409,
+    "recorded_at": "2000-01-01 06:49:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 410,
+    "recorded_at": "2000-01-01 06:50:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 411,
+    "recorded_at": "2000-01-01 06:51:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 412,
+    "recorded_at": "2000-01-01 06:52:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 413,
+    "recorded_at": "2000-01-01 06:53:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 414,
+    "recorded_at": "2000-01-01 06:54:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 415,
+    "recorded_at": "2000-01-01 06:55:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 416,
+    "recorded_at": "2000-01-01 06:56:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 417,
+    "recorded_at": "2000-01-01 06:57:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 418,
+    "recorded_at": "2000-01-01 06:58:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 419,
+    "recorded_at": "2000-01-01 06:59:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 420,
+    "recorded_at": "2000-01-01 07:00:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 421,
+    "recorded_at": "2000-01-01 07:01:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 422,
+    "recorded_at": "2000-01-01 07:02:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 423,
+    "recorded_at": "2000-01-01 07:03:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 424,
+    "recorded_at": "2000-01-01 07:04:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 425,
+    "recorded_at": "2000-01-01 07:05:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 426,
+    "recorded_at": "2000-01-01 07:06:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 427,
+    "recorded_at": "2000-01-01 07:07:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 428,
+    "recorded_at": "2000-01-01 07:08:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 429,
+    "recorded_at": "2000-01-01 07:09:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 430,
+    "recorded_at": "2000-01-01 07:10:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 431,
+    "recorded_at": "2000-01-01 07:11:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 432,
+    "recorded_at": "2000-01-01 07:12:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 433,
+    "recorded_at": "2000-01-01 07:13:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 434,
+    "recorded_at": "2000-01-01 07:14:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 435,
+    "recorded_at": "2000-01-01 07:15:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 436,
+    "recorded_at": "2000-01-01 07:16:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 437,
+    "recorded_at": "2000-01-01 07:17:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 438,
+    "recorded_at": "2000-01-01 07:18:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 439,
+    "recorded_at": "2000-01-01 07:19:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 440,
+    "recorded_at": "2000-01-01 07:20:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 441,
+    "recorded_at": "2000-01-01 07:21:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 442,
+    "recorded_at": "2000-01-01 07:22:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 443,
+    "recorded_at": "2000-01-01 07:23:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 444,
+    "recorded_at": "2000-01-01 07:24:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 445,
+    "recorded_at": "2000-01-01 07:25:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 446,
+    "recorded_at": "2000-01-01 07:26:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 447,
+    "recorded_at": "2000-01-01 07:27:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 448,
+    "recorded_at": "2000-01-01 07:28:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 449,
+    "recorded_at": "2000-01-01 07:29:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 450,
+    "recorded_at": "2000-01-01 07:30:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 451,
+    "recorded_at": "2000-01-01 07:31:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 452,
+    "recorded_at": "2000-01-01 07:32:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 453,
+    "recorded_at": "2000-01-01 07:33:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 454,
+    "recorded_at": "2000-01-01 07:34:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 455,
+    "recorded_at": "2000-01-01 07:35:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 456,
+    "recorded_at": "2000-01-01 07:36:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 457,
+    "recorded_at": "2000-01-01 07:37:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 458,
+    "recorded_at": "2000-01-01 07:38:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 459,
+    "recorded_at": "2000-01-01 07:39:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 460,
+    "recorded_at": "2000-01-01 07:40:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 461,
+    "recorded_at": "2000-01-01 07:41:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 462,
+    "recorded_at": "2000-01-01 07:42:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 463,
+    "recorded_at": "2000-01-01 07:43:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 464,
+    "recorded_at": "2000-01-01 07:44:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 465,
+    "recorded_at": "2000-01-01 07:45:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 466,
+    "recorded_at": "2000-01-01 07:46:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 467,
+    "recorded_at": "2000-01-01 07:47:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 468,
+    "recorded_at": "2000-01-01 07:48:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 469,
+    "recorded_at": "2000-01-01 07:49:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 470,
+    "recorded_at": "2000-01-01 07:50:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 471,
+    "recorded_at": "2000-01-01 07:51:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 472,
+    "recorded_at": "2000-01-01 07:52:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 473,
+    "recorded_at": "2000-01-01 07:53:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 474,
+    "recorded_at": "2000-01-01 07:54:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 475,
+    "recorded_at": "2000-01-01 07:55:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 476,
+    "recorded_at": "2000-01-01 07:56:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 477,
+    "recorded_at": "2000-01-01 07:57:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 478,
+    "recorded_at": "2000-01-01 07:58:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 479,
+    "recorded_at": "2000-01-01 07:59:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 480,
+    "recorded_at": "2000-01-01 08:00:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 481,
+    "recorded_at": "2000-01-01 08:01:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 482,
+    "recorded_at": "2000-01-01 08:02:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 483,
+    "recorded_at": "2000-01-01 08:03:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 484,
+    "recorded_at": "2000-01-01 08:04:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 485,
+    "recorded_at": "2000-01-01 08:05:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 486,
+    "recorded_at": "2000-01-01 08:06:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 487,
+    "recorded_at": "2000-01-01 08:07:00",
+    "label": "A",
+    "is_apnea": true
+  },
+  {
+    "recording_id": "a01",
+    "minute_index": 488,
+    "recorded_at": "2000-01-01 08:08:00",
+    "label": "A",
+    "is_apnea": true
+  }
+]

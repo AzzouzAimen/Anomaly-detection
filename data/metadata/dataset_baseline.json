@@ -125,6 +125,28 @@
     "doi": "10.13026/C23W2R",
     "license": "Open Data Commons Attribution License v1.0"
   },
+  "a06": {
+    "record_name": "a06",
+    "subject_id": "subject_a06",
+    "source_record_name": "a06",
+    "split": "learning",
+    "category": "a",
+    "sampling_rate_hz": 100,
+    "num_samples": 3058000,
+    "length_seconds": 30580,
+    "signals": [
+      "ECG"
+    ],
+    "has_respiration": false,
+    "has_apnea_annotations": true,
+    "has_qrs_annotations": true,
+    "selected_header_file": "a06.hea",
+    "artificial_start_time": "2000-01-01 00:00:00",
+    "source": "PhysioNet Apnea-ECG Database",
+    "source_url": "https://physionet.org/content/apnea-ecg/1.0.0/",
+    "doi": "10.13026/C23W2R",
+    "license": "Open Data Commons Attribution License v1.0"
+  },
   "a07": {
     "record_name": "a07",
     "subject_id": "subject_a07",

@@ -67,12 +67,6 @@ Published SQL/Schema Files: DDL scripts and a sample data dump ready for externa
 The "Architectural Verdict": A final summary concluding which database system (Standard vs. Time-Series) is superior for medical monitoring at scale.
 
 5. Research Topics
-Each team of nine students is assigned one of the following six medical time-series topics. Topic assignments are fixed and must be maintained consistently across all three sprints.
-Topic M1: ECG ST-T Analysis uses the PhysioNet European ST-T Database, comprising 90 annotated two-channel ambulatory ECG recordings from 79 subjects, with over 768 labeled episodes of ST segment and T-wave chang
-Topic M2: EEG Epilepsy Detection uses the PhysioNet CHB-MIT Scalp EEG Database covering 24 pediatric patients across 23 channels sampled at 256 Hz with 182 annotated seizure events.
-Topic M3: Sleep Stage Anomaly Detection uses the PhysioNet Sleep-EDF Database covering 153 subjects recorded across EEG and EOG channels with more than 20 hours per subject.
-Topic M4: Respiratory Apnea Detection uses the PhysioNet Apnea-ECG Database containing 70 recordings of approximately 8 hours each with synchronized ECG and respiratory signals.
-Topic M5: Human Activity Anomaly Detection uses the UCI Human Activity Recognition Dataset covering 30 subjects, 561 features derived from accelerometer and gyroscope signals, across 6 activity classes and 10,299 windows.
-Topic M6: Synthetic Thermal Time-Series Generation focuses entirely on the design and generation of a synthetic dataset simulating skin temperature readings from a wearable breast thermal monitoring device.
 
+Topic M4: Respiratory Apnea Detection uses the PhysioNet Apnea-ECG Database containing 70 recordings of approximately 8 hours each with synchronized ECG and respiratory signals.
 

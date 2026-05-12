@@ -2,7 +2,7 @@ name: apnea-detection
 
 services:
   postgres:
-    image: postgres:17-alpine
+    image: postgres:17.5-alpine
     container_name: apnea_postgres
     restart: unless-stopped
 
@@ -11,6 +11,7 @@ services:
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-password}
       POSTGRES_DB: ${POSTGRES_DB:-apnea_db}
       PGDATA: /var/lib/postgresql/data/pgdata
+      TZ: UTC
 
     ports:
       - "${POSTGRES_PORT:-5432}:5432"
@@ -31,10 +32,11 @@ services:
     restart: unless-stopped
 
     environment:
-      POSTGRES_USER: ${TIMESCALE_USER:-timescale_user}
+      POSTGRES_USER: ${TIMESCALE_USER:-user}
       POSTGRES_PASSWORD: ${TIMESCALE_PASSWORD:-timescale_password}
       POSTGRES_DB: ${TIMESCALE_DB:-apnea_ts_db}
       PGDATA: /var/lib/postgresql/data/pgdata
+      TZ: UTC
 
     ports:
       - "${TIMESCALE_PORT:-5433}:5432"
@@ -44,7 +46,7 @@ services:
       - ./database/timeseries/init:/docker-entrypoint-initdb.d:ro
 
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U ${TIMESCALE_USER:-timescale_user} -d ${TIMESCALE_DB:-apnea_ts_db}"]
+      test: ["CMD-SHELL", "pg_isready -U ${TIMESCALE_USER:-user} -d ${TIMESCALE_DB:-apnea_ts_db}"]
       interval: 10s
       timeout: 5s
       retries: 5
