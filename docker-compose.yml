@@ -3,6 +3,7 @@ name: apnea-detection
 services:
   postgres:
     image: postgres:17.5-alpine
+    platform: ${DOCKER_PLATFORM:-linux/arm64/v8}
     container_name: apnea_postgres
     restart: unless-stopped
 
@@ -28,6 +29,7 @@ services:
 
   timescaledb:
     image: timescale/timescaledb:2.17.2-pg17 
+    platform: ${DOCKER_PLATFORM:-linux/arm64/v8}
     container_name: apnea_timescaledb
     restart: unless-stopped
 
