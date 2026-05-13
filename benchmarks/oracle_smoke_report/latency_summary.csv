@@ -1,0 +1,5 @@
+test_name,postgres_avg_ms,timescale_avg_ms,postgres_p95_ms,timescale_p95_ms
+qrs_aggregation,0.2831,0.5146000000000001,0.315,0.5509999999999999
+range_query_latency,1.87213,2.27503,1.9589999999999999,2.3640000000000003
+signal_label_join,1.0204,1.3722,1.0150000000000001,1.388
+temporal_aggregation,0.8005,0.9103,0.829,0.9510000000000001

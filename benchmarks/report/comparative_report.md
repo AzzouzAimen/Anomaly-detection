@@ -10,10 +10,10 @@ Warmup iterations per query: 2
 
 | Test | PostgreSQL avg (ms) | TimescaleDB avg (ms) | PostgreSQL p95 (ms) | TimescaleDB p95 (ms) |
 | --- | ---: | ---: | ---: | ---: |
-| qrs_aggregation | 10.55 | 6.13 | 11.92 | 6.75 |
-| range_query_latency | 758.79 | 530.38 | 1102.92 | 534.41 |
-| signal_label_join | 66274.55 | 83151.84 | 69943.32 | 93113.41 |
-| temporal_aggregation | 5898.16 | 246.46 | 5893.11 | 250.47 |
+| qrs_aggregation | 10.42 | 6.14 | 11.77 | 6.79 |
+| range_query_latency | 757.59 | 533.97 | 1104.51 | 538.49 |
+| signal_label_join | 66416.07 | 86098.03 | 69774.51 | 96204.63 |
+| temporal_aggregation | 5764.69 | 247.77 | 5793.56 | 253.43 |
 
 ## Write Throughput
 
@@ -24,8 +24,8 @@ TimescaleDB total throughput: 15365.842946148765
 
 PostgreSQL total size: 26.72 GB
 TimescaleDB total size: 80.00 KB
-TimescaleDB pre-compression total size: 80.00 KB
-TimescaleDB compression ratio: 1.0
+TimescaleDB pre-compression total size: 3.38 GB
+TimescaleDB compression ratio: 44359.3
 
 ## Generated Artifacts
 

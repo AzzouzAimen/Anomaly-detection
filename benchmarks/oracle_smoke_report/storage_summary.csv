@@ -1,0 +1,3 @@
+database,signals_bytes,annotations_apnea_bytes,annotations_qrs_bytes,total_bytes
+postgresql,327680,73728,57344,458752
+timescaledb,24576,32768,24576,81920
