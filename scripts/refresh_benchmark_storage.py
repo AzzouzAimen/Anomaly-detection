@@ -11,6 +11,7 @@ from typing import Any, Dict, Tuple
 from benchmark_suite import build_db_configs, connect_db, now_utc_iso, run_scalar
 from generate_benchmark_report import (
     build_markdown,
+    format_bytes,
     render_compression_chart,
     render_latency_chart,
     render_storage_chart,
@@ -115,7 +116,7 @@ def summary_paths(input_dir: Path) -> Tuple[Path, Path, Path]:
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Refresh only the benchmark storage section and regenerate the report."
+        description="Refresh benchmark storage metrics and report artifacts without rerunning latency benchmarks."
     )
     parser.add_argument("--input-dir", default="benchmarks/raw")
     parser.add_argument("--report-output-dir", default="benchmarks/report")
@@ -139,6 +140,22 @@ def main() -> None:
         regenerate_report(combined_summary, Path(args.report_output_dir))
 
     print(f"Refreshed storage metrics in {input_dir}")
+    print(
+        "PostgreSQL total size: "
+        f"{format_bytes(postgres_summary['storage']['total_bytes'])}"
+    )
+    print(
+        "TimescaleDB total size: "
+        f"{format_bytes(timescale_summary['storage']['total_bytes'])}"
+    )
+    print(
+        "TimescaleDB pre-compression total size: "
+        f"{format_bytes(timescale_summary['storage'].get('total_bytes_pre_compression', timescale_summary['storage']['total_bytes']))}"
+    )
+    print(
+        "TimescaleDB compression ratio: "
+        f"{timescale_summary['storage'].get('total_compression_ratio')}"
+    )
     if not args.skip_report:
         print(f"Regenerated report artifacts in {args.report_output_dir}")
 
