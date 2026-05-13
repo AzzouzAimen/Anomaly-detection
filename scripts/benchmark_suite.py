@@ -264,9 +264,13 @@ def ensure_timescale_signal_compression(connection) -> int:
 
 
 def get_storage_metrics(db: DbConfig, connection, ingestion_metrics: Dict[str, Any]) -> Dict[str, Any]:
-    signals_bytes = int(run_scalar(connection, "SELECT pg_total_relation_size('signals');") or 0)
     apnea_bytes = int(run_scalar(connection, "SELECT pg_total_relation_size('annotations_apnea');") or 0)
     qrs_bytes = int(run_scalar(connection, "SELECT pg_total_relation_size('annotations_qrs');") or 0)
+
+    if db.is_timescale:
+        signals_bytes = int(run_scalar(connection, "SELECT total_bytes FROM hypertable_detailed_size('signals');") or 0)
+    else:
+        signals_bytes = int(run_scalar(connection, "SELECT pg_total_relation_size('signals');") or 0)
     total_bytes = signals_bytes + apnea_bytes + qrs_bytes
 
     storage = {

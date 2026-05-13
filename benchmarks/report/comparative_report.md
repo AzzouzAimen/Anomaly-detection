@@ -23,9 +23,9 @@ TimescaleDB total throughput: 15365.842946148765
 ## Storage
 
 PostgreSQL total size: 26.72 GB
-TimescaleDB total size: 80.00 KB
+TimescaleDB total size: 3.38 GB
 TimescaleDB pre-compression total size: 3.38 GB
-TimescaleDB compression ratio: 44359.3
+TimescaleDB compression ratio: 1.0
 
 ## Generated Artifacts
 

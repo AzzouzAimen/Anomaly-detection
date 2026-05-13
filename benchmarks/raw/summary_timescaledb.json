@@ -590,17 +590,18 @@
     }
   },
   "storage": {
-    "signals_bytes": 24576,
+    "signals_bytes": 3633856512,
     "annotations_apnea_bytes": 32768,
     "annotations_qrs_bytes": 24576,
-    "total_bytes": 81920,
+    "total_bytes": 3633913856,
     "compression_was_applied_during_ingestion": false,
     "signals_bytes_pre_compression": 3633856512,
-    "signals_bytes_post_compression": 24576,
+    "signals_bytes_post_compression": 3633856512,
     "total_bytes_pre_compression": 3633913856,
-    "total_bytes_post_compression": 81920,
-    "signals_compression_ratio": 147862.0,
-    "total_compression_ratio": 44359.3,
+    "total_bytes_post_compression": 3633913856,
+    "signals_compression_ratio": 1.0,
+    "total_compression_ratio": 1.0,
     "chunks_processed_for_compression": 10
-  }
+  },
+  "storage_refreshed_at": "2026-05-13T12:16:25+00:00"
 }
