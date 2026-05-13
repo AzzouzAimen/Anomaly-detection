@@ -1,0 +1,3163 @@
+{
+  "generated_at": "2026-05-12T21:43:59+00:00",
+  "processed_dir": "data/processed",
+  "cleaning_log_present": true,
+  "record_count": 70,
+  "status_counts": {
+    "pass": 70,
+    "warn": 0,
+    "fail": 0
+  },
+  "records": [
+    {
+      "record_id": "a01",
+      "signals": {
+        "path": null,
+        "row_count": 2956796,
+        "expected_row_count": 2956796,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:12:47.950000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a01/signals_a01.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 489,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:08:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a01/apnea_a01.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 29938,
+        "first_timestamp": "2000-01-01T00:00:00.340000+00:00",
+        "last_timestamp": "2000-01-01T08:12:44.450000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a01/qrs_a01.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 493,
+        "expected_row_count": 493,
+        "labeled_windows": 489,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a01/windows_a01.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "a02",
+      "signals": {
+        "path": null,
+        "row_count": 3181796,
+        "expected_row_count": 3181796,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:50:17.950000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a02/signals_a02.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 528,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:47:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a02/apnea_a02.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 35242,
+        "first_timestamp": "2000-01-01T00:00:00.310000+00:00",
+        "last_timestamp": "2000-01-01T08:50:16.410000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a02/qrs_a02.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 531,
+        "expected_row_count": 531,
+        "labeled_windows": 528,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a02/windows_a02.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "a03",
+      "signals": {
+        "path": null,
+        "row_count": 3134796,
+        "expected_row_count": 3134796,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:42:27.950000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a03/signals_a03.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 519,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:38:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a03/apnea_a03.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 34259,
+        "first_timestamp": "2000-01-01T00:00:00.090000+00:00",
+        "last_timestamp": "2000-01-01T08:42:25.800000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a03/qrs_a03.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 523,
+        "expected_row_count": 523,
+        "labeled_windows": 519,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a03/windows_a03.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "a04",
+      "signals": {
+        "path": null,
+        "row_count": 2979796,
+        "expected_row_count": 2979796,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:16:37.950000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a04/signals_a04.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 492,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:11:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a04/apnea_a04.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 31243,
+        "first_timestamp": "2000-01-01T00:00:00.030000+00:00",
+        "last_timestamp": "2000-01-01T08:16:30.340000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a04/qrs_a04.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 497,
+        "expected_row_count": 497,
+        "labeled_windows": 492,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a04/windows_a04.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "a05",
+      "signals": {
+        "path": null,
+        "row_count": 2719500,
+        "expected_row_count": 2719500,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T07:33:14.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a05/signals_a05.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 454,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T07:33:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a05/apnea_a05.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 28778,
+        "first_timestamp": "2000-01-01T00:00:00.520000+00:00",
+        "last_timestamp": "2000-01-01T07:33:14.680000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a05/qrs_a05.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 454,
+        "expected_row_count": 454,
+        "labeled_windows": 454,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a05/windows_a05.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "a06",
+      "signals": {
+        "path": null,
+        "row_count": 3058000,
+        "expected_row_count": 3058000,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:29:39.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a06/signals_a06.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 510,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:29:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a06/apnea_a06.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 27279,
+        "first_timestamp": "2000-01-01T00:00:00.870000+00:00",
+        "last_timestamp": "2000-01-01T08:29:35.040000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a06/qrs_a06.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 510,
+        "expected_row_count": 510,
+        "labeled_windows": 510,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a06/windows_a06.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "a07",
+      "signals": {
+        "path": null,
+        "row_count": 3060500,
+        "expected_row_count": 3060500,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:30:04.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a07/signals_a07.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 511,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:30:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a07/apnea_a07.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 37478,
+        "first_timestamp": "2000-01-01T00:00:00.210000+00:00",
+        "last_timestamp": "2000-01-01T08:30:04.510000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a07/qrs_a07.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 511,
+        "expected_row_count": 511,
+        "labeled_windows": 511,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a07/windows_a07.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "a08",
+      "signals": {
+        "path": null,
+        "row_count": 3002500,
+        "expected_row_count": 3002500,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:20:24.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a08/signals_a08.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 501,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:20:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a08/apnea_a08.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 41145,
+        "first_timestamp": "2000-01-01T00:00:00.010000+00:00",
+        "last_timestamp": "2000-01-01T08:20:24.620000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a08/qrs_a08.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 501,
+        "expected_row_count": 501,
+        "labeled_windows": 501,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a08/windows_a08.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "a09",
+      "signals": {
+        "path": null,
+        "row_count": 2988000,
+        "expected_row_count": 2988000,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:17:59.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a09/signals_a09.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 495,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:14:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a09/apnea_a09.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 31553,
+        "first_timestamp": "2000-01-01T00:00:00.090000+00:00",
+        "last_timestamp": "2000-01-01T08:17:55.390000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a09/qrs_a09.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 498,
+        "expected_row_count": 498,
+        "labeled_windows": 495,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a09/windows_a09.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "a10",
+      "signals": {
+        "path": null,
+        "row_count": 3101500,
+        "expected_row_count": 3101500,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:36:54.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a10/signals_a10.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 517,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:36:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a10/apnea_a10.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 32305,
+        "first_timestamp": "2000-01-01T00:00:00.710000+00:00",
+        "last_timestamp": "2000-01-01T08:36:54+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a10/qrs_a10.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 517,
+        "expected_row_count": 517,
+        "labeled_windows": 517,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a10/windows_a10.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "a11",
+      "signals": {
+        "path": null,
+        "row_count": 2808000,
+        "expected_row_count": 2808000,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T07:47:59.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a11/signals_a11.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 466,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T07:45:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a11/apnea_a11.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 33195,
+        "first_timestamp": "2000-01-01T00:00:00.140000+00:00",
+        "last_timestamp": "2000-01-01T07:47:59.280000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a11/qrs_a11.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 468,
+        "expected_row_count": 468,
+        "labeled_windows": 466,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a11/windows_a11.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "a12",
+      "signals": {
+        "path": null,
+        "row_count": 3462000,
+        "expected_row_count": 3462000,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T09:36:59.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a12/signals_a12.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 577,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T09:36:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a12/apnea_a12.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 33940,
+        "first_timestamp": "2000-01-01T00:00:00.010000+00:00",
+        "last_timestamp": "2000-01-01T09:36:55.520000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a12/qrs_a12.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 577,
+        "expected_row_count": 577,
+        "labeled_windows": 577,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a12/windows_a12.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "a13",
+      "signals": {
+        "path": null,
+        "row_count": 2965500,
+        "expected_row_count": 2965500,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:14:14.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a13/signals_a13.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 495,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:14:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a13/apnea_a13.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 39792,
+        "first_timestamp": "2000-01-01T00:00:00.290000+00:00",
+        "last_timestamp": "2000-01-01T08:14:14.210000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a13/qrs_a13.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 495,
+        "expected_row_count": 495,
+        "labeled_windows": 495,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a13/windows_a13.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "a14",
+      "signals": {
+        "path": null,
+        "row_count": 3135000,
+        "expected_row_count": 3135000,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:42:29.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a14/signals_a14.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 509,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:28:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a14/apnea_a14.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 29018,
+        "first_timestamp": "2000-01-01T00:00:00.170000+00:00",
+        "last_timestamp": "2000-01-01T08:42:21.600000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a14/qrs_a14.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 523,
+        "expected_row_count": 523,
+        "labeled_windows": 509,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a14/windows_a14.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "a15",
+      "signals": {
+        "path": null,
+        "row_count": 3056000,
+        "expected_row_count": 3056000,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:29:19.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a15/signals_a15.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 510,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:29:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a15/apnea_a15.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 33987,
+        "first_timestamp": "2000-01-01T00:00:00.550000+00:00",
+        "last_timestamp": "2000-01-01T08:29:19.710000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a15/qrs_a15.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 510,
+        "expected_row_count": 510,
+        "labeled_windows": 510,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a15/windows_a15.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "a16",
+      "signals": {
+        "path": null,
+        "row_count": 2888000,
+        "expected_row_count": 2888000,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:01:19.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a16/signals_a16.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 482,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:01:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a16/apnea_a16.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 34959,
+        "first_timestamp": "2000-01-01T00:00:00.770000+00:00",
+        "last_timestamp": "2000-01-01T08:01:19.440000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a16/qrs_a16.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 482,
+        "expected_row_count": 482,
+        "labeled_windows": 482,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a16/windows_a16.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "a17",
+      "signals": {
+        "path": null,
+        "row_count": 2904500,
+        "expected_row_count": 2904500,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:04:04.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a17/signals_a17.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 485,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:04:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a17/apnea_a17.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 36475,
+        "first_timestamp": "2000-01-01T00:00:00.110000+00:00",
+        "last_timestamp": "2000-01-01T08:04:04.340000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a17/qrs_a17.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 485,
+        "expected_row_count": 485,
+        "labeled_windows": 485,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a17/windows_a17.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "a18",
+      "signals": {
+        "path": null,
+        "row_count": 2957000,
+        "expected_row_count": 2957000,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:12:49.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a18/signals_a18.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 489,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:08:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a18/apnea_a18.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 30254,
+        "first_timestamp": "2000-01-01T00:00:00.620000+00:00",
+        "last_timestamp": "2000-01-01T08:12:42.810000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a18/qrs_a18.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 493,
+        "expected_row_count": 493,
+        "labeled_windows": 489,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a18/windows_a18.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "a19",
+      "signals": {
+        "path": null,
+        "row_count": 3012000,
+        "expected_row_count": 3012000,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:21:59.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a19/signals_a19.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 502,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:21:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a19/apnea_a19.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 38776,
+        "first_timestamp": "2000-01-01T00:00:00.440000+00:00",
+        "last_timestamp": "2000-01-01T08:21:59.060000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a19/qrs_a19.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 502,
+        "expected_row_count": 502,
+        "labeled_windows": 502,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a19/windows_a19.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "a20",
+      "signals": {
+        "path": null,
+        "row_count": 3060000,
+        "expected_row_count": 3060000,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:29:59.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a20/signals_a20.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 510,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:29:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a20/apnea_a20.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 34479,
+        "first_timestamp": "2000-01-01T00:00:00.430000+00:00",
+        "last_timestamp": "2000-01-01T08:29:59.020000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a20/qrs_a20.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 510,
+        "expected_row_count": 510,
+        "labeled_windows": 510,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/a20/windows_a20.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "b01",
+      "signals": {
+        "path": null,
+        "row_count": 2916796,
+        "expected_row_count": 2916796,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:06:07.950000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/b01/signals_b01.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 487,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:06:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/b01/apnea_b01.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 35100,
+        "first_timestamp": "2000-01-01T00:00:00.910000+00:00",
+        "last_timestamp": "2000-01-01T08:06:08.720000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/b01/qrs_b01.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 487,
+        "expected_row_count": 487,
+        "labeled_windows": 487,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/b01/windows_b01.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "b02",
+      "signals": {
+        "path": null,
+        "row_count": 3170500,
+        "expected_row_count": 3170500,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:48:24.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/b02/signals_b02.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 517,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:36:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/b02/apnea_b02.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 35396,
+        "first_timestamp": "2000-01-01T00:00:00.330000+00:00",
+        "last_timestamp": "2000-01-01T08:46:50.840000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/b02/qrs_b02.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 529,
+        "expected_row_count": 529,
+        "labeled_windows": 517,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/b02/windows_b02.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "b03",
+      "signals": {
+        "path": null,
+        "row_count": 2643000,
+        "expected_row_count": 2643000,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T07:20:29.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/b03/signals_b03.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 441,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T07:20:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/b03/apnea_b03.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 29089,
+        "first_timestamp": "2000-01-01T00:00:00.590000+00:00",
+        "last_timestamp": "2000-01-01T07:20:29.660000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/b03/qrs_b03.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 441,
+        "expected_row_count": 441,
+        "labeled_windows": 441,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/b03/windows_b03.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "b04",
+      "signals": {
+        "path": null,
+        "row_count": 2573000,
+        "expected_row_count": 2573000,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T07:08:49.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/b04/signals_b04.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 429,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T07:08:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/b04/apnea_b04.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 25067,
+        "first_timestamp": "2000-01-01T00:00:38.540000+00:00",
+        "last_timestamp": "2000-01-01T07:08:46.280000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/b04/qrs_b04.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 429,
+        "expected_row_count": 429,
+        "labeled_windows": 429,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/b04/windows_b04.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "b05",
+      "signals": {
+        "path": null,
+        "row_count": 2593500,
+        "expected_row_count": 2593500,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T07:12:14.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/b05/signals_b05.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 433,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T07:12:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/b05/apnea_b05.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 29342,
+        "first_timestamp": "2000-01-01T00:00:00.170000+00:00",
+        "last_timestamp": "2000-01-01T07:12:14.220000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/b05/qrs_b05.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 433,
+        "expected_row_count": 433,
+        "labeled_windows": 433,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/b05/windows_b05.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "c01",
+      "signals": {
+        "path": null,
+        "row_count": 2898796,
+        "expected_row_count": 2898796,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:03:07.950000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/c01/signals_c01.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 484,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:03:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/c01/apnea_c01.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 27871,
+        "first_timestamp": "2000-01-01T00:00:56+00:00",
+        "last_timestamp": "2000-01-01T08:03:02.210000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/c01/qrs_c01.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 484,
+        "expected_row_count": 484,
+        "labeled_windows": 484,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/c01/windows_c01.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "c02",
+      "signals": {
+        "path": null,
+        "row_count": 3006796,
+        "expected_row_count": 3006796,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:21:07.950000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/c02/signals_c02.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 502,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:21:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/c02/apnea_c02.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 32221,
+        "first_timestamp": "2000-01-01T00:01:50.300000+00:00",
+        "last_timestamp": "2000-01-01T08:21:06.430000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/c02/qrs_c02.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 502,
+        "expected_row_count": 502,
+        "labeled_windows": 502,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/c02/windows_c02.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "c03",
+      "signals": {
+        "path": null,
+        "row_count": 2719796,
+        "expected_row_count": 2719796,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T07:33:17.950000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/c03/signals_c03.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 454,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T07:33:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/c03/apnea_c03.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 23773,
+        "first_timestamp": "2000-01-01T00:00:00.880000+00:00",
+        "last_timestamp": "2000-01-01T07:33:13.590000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/c03/qrs_c03.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 454,
+        "expected_row_count": 454,
+        "labeled_windows": 454,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/c03/windows_c03.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "c04",
+      "signals": {
+        "path": null,
+        "row_count": 2887000,
+        "expected_row_count": 2887000,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:01:09.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/c04/signals_c04.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 482,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:01:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/c04/apnea_c04.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 28518,
+        "first_timestamp": "2000-01-01T00:00:56.010000+00:00",
+        "last_timestamp": "2000-01-01T08:01:08.610000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/c04/qrs_c04.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 482,
+        "expected_row_count": 482,
+        "labeled_windows": 482,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/c04/windows_c04.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "c05",
+      "signals": {
+        "path": null,
+        "row_count": 2793000,
+        "expected_row_count": 2793000,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T07:45:29.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/c05/signals_c05.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 466,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T07:45:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/c05/apnea_c05.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 28065,
+        "first_timestamp": "2000-01-01T00:00:00.310000+00:00",
+        "last_timestamp": "2000-01-01T07:45:29.410000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/c05/qrs_c05.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 466,
+        "expected_row_count": 466,
+        "labeled_windows": 466,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/c05/windows_c05.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "c06",
+      "signals": {
+        "path": null,
+        "row_count": 2804000,
+        "expected_row_count": 2804000,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T07:47:19.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/c06/signals_c06.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 468,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T07:47:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/c06/apnea_c06.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 28174,
+        "first_timestamp": "2000-01-01T00:00:00.840000+00:00",
+        "last_timestamp": "2000-01-01T07:47:15.510000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/c06/qrs_c06.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 468,
+        "expected_row_count": 468,
+        "labeled_windows": 468,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/c06/windows_c06.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "c07",
+      "signals": {
+        "path": null,
+        "row_count": 2569000,
+        "expected_row_count": 2569000,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T07:08:09.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/c07/signals_c07.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 429,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T07:08:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/c07/apnea_c07.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 31972,
+        "first_timestamp": "2000-01-01T00:00:00.330000+00:00",
+        "last_timestamp": "2000-01-01T07:08:07.860000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/c07/qrs_c07.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 429,
+        "expected_row_count": 429,
+        "labeled_windows": 429,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/c07/windows_c07.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "c08",
+      "signals": {
+        "path": null,
+        "row_count": 3084000,
+        "expected_row_count": 3084000,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:33:59.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/c08/signals_c08.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 513,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:32:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/c08/apnea_c08.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 30988,
+        "first_timestamp": "2000-01-01T00:00:00.840000+00:00",
+        "last_timestamp": "2000-01-01T08:33:42.720000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/c08/qrs_c08.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 514,
+        "expected_row_count": 514,
+        "labeled_windows": 513,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/c08/windows_c08.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "c09",
+      "signals": {
+        "path": null,
+        "row_count": 2805000,
+        "expected_row_count": 2805000,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T07:47:29.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/c09/signals_c09.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 468,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T07:47:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/c09/apnea_c09.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 31222,
+        "first_timestamp": "2000-01-01T00:07:39.430000+00:00",
+        "last_timestamp": "2000-01-01T07:47:28.730000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/c09/qrs_c09.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 468,
+        "expected_row_count": 468,
+        "labeled_windows": 468,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/c09/windows_c09.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "c10",
+      "signals": {
+        "path": null,
+        "row_count": 2585000,
+        "expected_row_count": 2585000,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T07:10:49.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/c10/signals_c10.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 431,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T07:10:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/c10/apnea_c10.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 24041,
+        "first_timestamp": "2000-01-01T00:04:26.340000+00:00",
+        "last_timestamp": "2000-01-01T07:10:43.350000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/c10/qrs_c10.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 431,
+        "expected_row_count": 431,
+        "labeled_windows": 431,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/c10/windows_c10.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "x01",
+      "signals": {
+        "path": null,
+        "row_count": 3137000,
+        "expected_row_count": 3137000,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:42:49.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x01/signals_x01.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 523,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:42:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x01/apnea_x01.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 36468,
+        "first_timestamp": "2000-01-01T00:10:14.970000+00:00",
+        "last_timestamp": "2000-01-01T08:42:49.580000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x01/qrs_x01.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 523,
+        "expected_row_count": 523,
+        "labeled_windows": 523,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x01/windows_x01.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "x02",
+      "signals": {
+        "path": null,
+        "row_count": 2833000,
+        "expected_row_count": 2833000,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T07:52:09.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x02/signals_x02.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 469,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T07:48:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x02/apnea_x02.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 39681,
+        "first_timestamp": "2000-01-01T00:00:00.550000+00:00",
+        "last_timestamp": "2000-01-01T07:52:06.620000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x02/qrs_x02.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 473,
+        "expected_row_count": 473,
+        "labeled_windows": 469,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x02/windows_x02.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "x03",
+      "signals": {
+        "path": null,
+        "row_count": 2790000,
+        "expected_row_count": 2790000,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T07:44:59.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x03/signals_x03.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 465,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T07:44:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x03/apnea_x03.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 33479,
+        "first_timestamp": "2000-01-01T00:00:00.490000+00:00",
+        "last_timestamp": "2000-01-01T07:44:58.560000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x03/qrs_x03.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 465,
+        "expected_row_count": 465,
+        "labeled_windows": 465,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x03/windows_x03.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "x04",
+      "signals": {
+        "path": null,
+        "row_count": 2891000,
+        "expected_row_count": 2891000,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:01:49.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x04/signals_x04.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 482,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:01:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x04/apnea_x04.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 25541,
+        "first_timestamp": "2000-01-01T00:03:08.320000+00:00",
+        "last_timestamp": "2000-01-01T08:01:46.200000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x04/qrs_x04.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 482,
+        "expected_row_count": 482,
+        "labeled_windows": 482,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x04/windows_x04.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "x05",
+      "signals": {
+        "path": null,
+        "row_count": 3027000,
+        "expected_row_count": 3027000,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:24:29.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x05/signals_x05.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 505,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:24:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x05/apnea_x05.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 35438,
+        "first_timestamp": "2000-01-01T00:00:00.250000+00:00",
+        "last_timestamp": "2000-01-01T08:24:29.590000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x05/qrs_x05.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 505,
+        "expected_row_count": 505,
+        "labeled_windows": 505,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x05/windows_x05.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "x06",
+      "signals": {
+        "path": null,
+        "row_count": 2697000,
+        "expected_row_count": 2697000,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T07:29:29.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x06/signals_x06.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 450,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T07:29:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x06/apnea_x06.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 22179,
+        "first_timestamp": "2000-01-01T00:00:51.450000+00:00",
+        "last_timestamp": "2000-01-01T07:29:18.870000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x06/qrs_x06.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 450,
+        "expected_row_count": 450,
+        "labeled_windows": 450,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x06/windows_x06.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "x07",
+      "signals": {
+        "path": null,
+        "row_count": 3050000,
+        "expected_row_count": 3050000,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:28:19.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x07/signals_x07.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 509,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:28:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x07/apnea_x07.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 32141,
+        "first_timestamp": "2000-01-01T00:00:00.420000+00:00",
+        "last_timestamp": "2000-01-01T08:28:19.150000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x07/qrs_x07.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 509,
+        "expected_row_count": 509,
+        "labeled_windows": 509,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x07/windows_x07.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "x08",
+      "signals": {
+        "path": null,
+        "row_count": 3102000,
+        "expected_row_count": 3102000,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:36:59.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x08/signals_x08.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 517,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:36:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x08/apnea_x08.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 35850,
+        "first_timestamp": "2000-01-01T00:00:00.220000+00:00",
+        "last_timestamp": "2000-01-01T08:36:59.210000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x08/qrs_x08.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 517,
+        "expected_row_count": 517,
+        "labeled_windows": 517,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x08/windows_x08.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "x09",
+      "signals": {
+        "path": null,
+        "row_count": 3047000,
+        "expected_row_count": 3047000,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:27:49.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x09/signals_x09.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 508,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:27:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x09/apnea_x09.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 37707,
+        "first_timestamp": "2000-01-01T00:00:00.250000+00:00",
+        "last_timestamp": "2000-01-01T08:27:44.310000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x09/qrs_x09.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 508,
+        "expected_row_count": 508,
+        "labeled_windows": 508,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x09/windows_x09.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "x10",
+      "signals": {
+        "path": null,
+        "row_count": 3057500,
+        "expected_row_count": 3057500,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:29:34.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x10/signals_x10.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 510,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:29:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x10/apnea_x10.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 41571,
+        "first_timestamp": "2000-01-01T00:00:00.070000+00:00",
+        "last_timestamp": "2000-01-01T08:29:34.020000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x10/qrs_x10.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 510,
+        "expected_row_count": 510,
+        "labeled_windows": 510,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x10/windows_x10.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "x11",
+      "signals": {
+        "path": null,
+        "row_count": 2736500,
+        "expected_row_count": 2736500,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T07:36:04.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x11/signals_x11.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 457,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T07:36:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x11/apnea_x11.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 30025,
+        "first_timestamp": "2000-01-01T00:00:00.800000+00:00",
+        "last_timestamp": "2000-01-01T07:36:04.610000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x11/qrs_x11.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 457,
+        "expected_row_count": 457,
+        "labeled_windows": 457,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x11/windows_x11.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "x12",
+      "signals": {
+        "path": null,
+        "row_count": 3221000,
+        "expected_row_count": 3221000,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:56:49.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x12/signals_x12.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 527,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:46:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x12/apnea_x12.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 38325,
+        "first_timestamp": "2000-01-01T00:00:00.310000+00:00",
+        "last_timestamp": "2000-01-01T08:56:49.530000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x12/qrs_x12.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 537,
+        "expected_row_count": 537,
+        "labeled_windows": 527,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x12/windows_x12.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "x13",
+      "signals": {
+        "path": null,
+        "row_count": 3049000,
+        "expected_row_count": 3049000,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:28:09.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x13/signals_x13.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 506,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:25:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x13/apnea_x13.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 35994,
+        "first_timestamp": "2000-01-01T00:00:00.880000+00:00",
+        "last_timestamp": "2000-01-01T08:28:07.670000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x13/qrs_x13.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 509,
+        "expected_row_count": 509,
+        "labeled_windows": 506,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x13/windows_x13.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "x14",
+      "signals": {
+        "path": null,
+        "row_count": 2985000,
+        "expected_row_count": 2985000,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:17:29.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x14/signals_x14.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 490,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:09:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x14/apnea_x14.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 39074,
+        "first_timestamp": "2000-01-01T00:00:00.250000+00:00",
+        "last_timestamp": "2000-01-01T08:17:26.410000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x14/qrs_x14.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 498,
+        "expected_row_count": 498,
+        "labeled_windows": 490,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x14/windows_x14.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "x15",
+      "signals": {
+        "path": null,
+        "row_count": 3120000,
+        "expected_row_count": 3120000,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:39:59.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x15/signals_x15.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 498,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:17:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x15/apnea_x15.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 30285,
+        "first_timestamp": "2000-01-01T00:00:00.750000+00:00",
+        "last_timestamp": "2000-01-01T08:39:54.080000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x15/qrs_x15.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 520,
+        "expected_row_count": 520,
+        "labeled_windows": 498,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x15/windows_x15.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "x16",
+      "signals": {
+        "path": null,
+        "row_count": 3089000,
+        "expected_row_count": 3089000,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:34:49.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x16/signals_x16.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 515,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:34:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x16/apnea_x16.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 34635,
+        "first_timestamp": "2000-01-01T00:00:00.030000+00:00",
+        "last_timestamp": "2000-01-01T08:34:49.230000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x16/qrs_x16.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 515,
+        "expected_row_count": 515,
+        "labeled_windows": 515,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x16/windows_x16.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "x17",
+      "signals": {
+        "path": null,
+        "row_count": 2430000,
+        "expected_row_count": 2430000,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T06:44:59.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x17/signals_x17.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 400,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T06:39:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x17/apnea_x17.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 19543,
+        "first_timestamp": "2000-01-01T00:00:00.240000+00:00",
+        "last_timestamp": "2000-01-01T06:44:16.640000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x17/qrs_x17.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 405,
+        "expected_row_count": 405,
+        "labeled_windows": 400,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x17/windows_x17.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "x18",
+      "signals": {
+        "path": null,
+        "row_count": 2753000,
+        "expected_row_count": 2753000,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T07:38:49.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x18/signals_x18.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 459,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T07:38:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x18/apnea_x18.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 24989,
+        "first_timestamp": "2000-01-01T00:00:27.550000+00:00",
+        "last_timestamp": "2000-01-01T07:38:30.700000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x18/qrs_x18.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 459,
+        "expected_row_count": 459,
+        "labeled_windows": 459,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x18/windows_x18.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "x19",
+      "signals": {
+        "path": null,
+        "row_count": 2944000,
+        "expected_row_count": 2944000,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:10:39.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x19/signals_x19.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 487,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:06:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x19/apnea_x19.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 31202,
+        "first_timestamp": "2000-01-01T00:00:00.110000+00:00",
+        "last_timestamp": "2000-01-01T08:10:36.440000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x19/qrs_x19.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 491,
+        "expected_row_count": 491,
+        "labeled_windows": 487,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x19/windows_x19.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "x20",
+      "signals": {
+        "path": null,
+        "row_count": 3074500,
+        "expected_row_count": 3074500,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:32:24.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x20/signals_x20.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 513,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:32:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x20/apnea_x20.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 39108,
+        "first_timestamp": "2000-01-01T00:00:00.440000+00:00",
+        "last_timestamp": "2000-01-01T08:32:24.350000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x20/qrs_x20.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 513,
+        "expected_row_count": 513,
+        "labeled_windows": 513,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x20/windows_x20.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "x21",
+      "signals": {
+        "path": null,
+        "row_count": 3057500,
+        "expected_row_count": 3057500,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:29:34.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x21/signals_x21.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 510,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:29:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x21/apnea_x21.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 33016,
+        "first_timestamp": "2000-01-01T00:00:00.150000+00:00",
+        "last_timestamp": "2000-01-01T08:29:34.570000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x21/qrs_x21.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 510,
+        "expected_row_count": 510,
+        "labeled_windows": 510,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x21/windows_x21.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "x22",
+      "signals": {
+        "path": null,
+        "row_count": 2887000,
+        "expected_row_count": 2887000,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:01:09.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x22/signals_x22.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 482,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:01:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x22/apnea_x22.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 29071,
+        "first_timestamp": "2000-01-01T00:05:14.920000+00:00",
+        "last_timestamp": "2000-01-01T08:01:09.080000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x22/qrs_x22.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 482,
+        "expected_row_count": 482,
+        "labeled_windows": 482,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x22/windows_x22.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "x23",
+      "signals": {
+        "path": null,
+        "row_count": 3196000,
+        "expected_row_count": 3196000,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:52:39.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x23/signals_x23.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 527,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:46:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x23/apnea_x23.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 38287,
+        "first_timestamp": "2000-01-01T00:00:00.340000+00:00",
+        "last_timestamp": "2000-01-01T08:52:34.100000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x23/qrs_x23.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 533,
+        "expected_row_count": 533,
+        "labeled_windows": 527,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x23/windows_x23.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "x24",
+      "signals": {
+        "path": null,
+        "row_count": 2571000,
+        "expected_row_count": 2571000,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T07:08:29.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x24/signals_x24.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 429,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T07:08:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x24/apnea_x24.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 21889,
+        "first_timestamp": "2000-01-01T00:07:33.430000+00:00",
+        "last_timestamp": "2000-01-01T07:08:20.360000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x24/qrs_x24.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 429,
+        "expected_row_count": 429,
+        "labeled_windows": 429,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x24/windows_x24.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "x25",
+      "signals": {
+        "path": null,
+        "row_count": 3055000,
+        "expected_row_count": 3055000,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:29:09.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x25/signals_x25.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 510,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:29:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x25/apnea_x25.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 32551,
+        "first_timestamp": "2000-01-01T00:00:01.410000+00:00",
+        "last_timestamp": "2000-01-01T08:29:09.330000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x25/qrs_x25.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 510,
+        "expected_row_count": 510,
+        "labeled_windows": 510,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x25/windows_x25.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "x26",
+      "signals": {
+        "path": null,
+        "row_count": 3119000,
+        "expected_row_count": 3119000,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:39:49.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x26/signals_x26.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 520,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:39:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x26/apnea_x26.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 32330,
+        "first_timestamp": "2000-01-01T00:00:00.050000+00:00",
+        "last_timestamp": "2000-01-01T08:39:42.690000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x26/qrs_x26.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 520,
+        "expected_row_count": 520,
+        "labeled_windows": 520,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x26/windows_x26.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "x27",
+      "signals": {
+        "path": null,
+        "row_count": 2985500,
+        "expected_row_count": 2985500,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:17:34.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x27/signals_x27.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 498,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:17:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x27/apnea_x27.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 39994,
+        "first_timestamp": "2000-01-01T00:00:00.220000+00:00",
+        "last_timestamp": "2000-01-01T08:17:34.110000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x27/qrs_x27.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 498,
+        "expected_row_count": 498,
+        "labeled_windows": 498,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x27/windows_x27.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "x28",
+      "signals": {
+        "path": null,
+        "row_count": 2970000,
+        "expected_row_count": 2970000,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:14:59.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x28/signals_x28.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 495,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:14:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x28/apnea_x28.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 37660,
+        "first_timestamp": "2000-01-01T00:09:56.810000+00:00",
+        "last_timestamp": "2000-01-01T08:14:59.470000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x28/qrs_x28.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 495,
+        "expected_row_count": 495,
+        "labeled_windows": 495,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x28/windows_x28.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "x29",
+      "signals": {
+        "path": null,
+        "row_count": 2821000,
+        "expected_row_count": 2821000,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T07:50:09.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x29/signals_x29.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 470,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T07:49:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x29/apnea_x29.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 30652,
+        "first_timestamp": "2000-01-01T00:00:37.240000+00:00",
+        "last_timestamp": "2000-01-01T07:49:53.050000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x29/qrs_x29.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 471,
+        "expected_row_count": 471,
+        "labeled_windows": 470,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x29/windows_x29.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "x30",
+      "signals": {
+        "path": null,
+        "row_count": 3204500,
+        "expected_row_count": 3204500,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:54:04.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x30/signals_x30.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 511,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:30:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x30/apnea_x30.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 36431,
+        "first_timestamp": "2000-01-01T00:00:00.010000+00:00",
+        "last_timestamp": "2000-01-01T08:51:41.300000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x30/qrs_x30.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 535,
+        "expected_row_count": 535,
+        "labeled_windows": 511,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x30/windows_x30.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "x31",
+      "signals": {
+        "path": null,
+        "row_count": 3342000,
+        "expected_row_count": 3342000,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T09:16:59.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x31/signals_x31.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 557,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T09:16:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x31/apnea_x31.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 34171,
+        "first_timestamp": "2000-01-01T00:00:00.180000+00:00",
+        "last_timestamp": "2000-01-01T09:16:50.820000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x31/qrs_x31.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 557,
+        "expected_row_count": 557,
+        "labeled_windows": 557,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x31/windows_x31.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "x32",
+      "signals": {
+        "path": null,
+        "row_count": 3228000,
+        "expected_row_count": 3228000,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:57:59.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x32/signals_x32.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 538,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:57:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x32/apnea_x32.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 34118,
+        "first_timestamp": "2000-01-01T00:00:00.050000+00:00",
+        "last_timestamp": "2000-01-01T08:57:19.950000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x32/qrs_x32.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 538,
+        "expected_row_count": 538,
+        "labeled_windows": 538,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x32/windows_x32.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "x33",
+      "signals": {
+        "path": null,
+        "row_count": 2834000,
+        "expected_row_count": 2834000,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T07:52:19.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x33/signals_x33.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 473,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T07:52:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x33/apnea_x33.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 34109,
+        "first_timestamp": "2000-01-01T00:00:00.240000+00:00",
+        "last_timestamp": "2000-01-01T07:52:19.710000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x33/qrs_x33.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 473,
+        "expected_row_count": 473,
+        "labeled_windows": 473,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x33/windows_x33.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "x34",
+      "signals": {
+        "path": null,
+        "row_count": 2845000,
+        "expected_row_count": 2845000,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T07:54:09.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x34/signals_x34.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 475,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T07:54:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x34/apnea_x34.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 34252,
+        "first_timestamp": "2000-01-01T00:00:00.770000+00:00",
+        "last_timestamp": "2000-01-01T07:54:07.550000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x34/qrs_x34.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 475,
+        "expected_row_count": 475,
+        "labeled_windows": 475,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x34/windows_x34.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    },
+    {
+      "record_id": "x35",
+      "signals": {
+        "path": null,
+        "row_count": 2893000,
+        "expected_row_count": 2893000,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:02:09.990000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x35/signals_x35.jsonl",
+        "artifact_retained": false
+      },
+      "apnea": {
+        "path": null,
+        "row_count": 483,
+        "first_timestamp": "2000-01-01T00:00:00+00:00",
+        "last_timestamp": "2000-01-01T08:02:00+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x35/apnea_x35.json",
+        "artifact_retained": false
+      },
+      "qrs": {
+        "path": null,
+        "row_count": 29088,
+        "first_timestamp": "2000-01-01T00:05:54.920000+00:00",
+        "last_timestamp": "2000-01-01T08:02:03.200000+00:00",
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x35/qrs_x35.json",
+        "artifact_retained": false
+      },
+      "windows": {
+        "path": null,
+        "row_count": 483,
+        "expected_row_count": 483,
+        "labeled_windows": 483,
+        "issues": [],
+        "warnings": [],
+        "source_path": "data/processed/_staging/x35/windows_x35.json",
+        "artifact_retained": false
+      },
+      "status": "pass"
+    }
+  ]
+}

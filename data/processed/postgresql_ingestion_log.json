@@ -1,0 +1,38 @@
+{
+  "database_name": "postgresql",
+  "source_dir": "data/processed",
+  "start_time": "2026-05-12T12:55:24+00:00",
+  "end_time": "2026-05-12T21:41:03+00:00",
+  "stats": [
+    {
+      "table": "cleanup",
+      "rows_inserted": 70,
+      "duration_sec": 34.63782162684947
+    },
+    {
+      "table": "subjects",
+      "rows_inserted": 70,
+      "duration_sec": 0.12967290915548801
+    },
+    {
+      "table": "recordings",
+      "rows_inserted": 70,
+      "duration_sec": 0.12992261070758104
+    },
+    {
+      "table": "signals",
+      "rows_inserted": 206522368,
+      "duration_sec": 7635.221404070966
+    },
+    {
+      "table": "annotations_apnea",
+      "rows_inserted": 34313,
+      "duration_sec": 2.1248426102101803
+    },
+    {
+      "table": "annotations_qrs",
+      "rows_inserted": 2275788,
+      "duration_sec": 77.74017191212624
+    }
+  ]
+}

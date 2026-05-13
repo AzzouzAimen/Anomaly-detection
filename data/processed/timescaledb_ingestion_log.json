@@ -1,0 +1,43 @@
+{
+  "database_name": "timescaledb",
+  "source_dir": "data/processed",
+  "start_time": "2026-05-12T12:57:43+00:00",
+  "end_time": "2026-05-12T21:43:59+00:00",
+  "stats": [
+    {
+      "table": "cleanup",
+      "rows_inserted": 70,
+      "duration_sec": 15.469353009015322
+    },
+    {
+      "table": "subjects",
+      "rows_inserted": 70,
+      "duration_sec": 0.1431466694921255
+    },
+    {
+      "table": "recordings",
+      "rows_inserted": 70,
+      "duration_sec": 0.15643177181482315
+    },
+    {
+      "table": "signals",
+      "rows_inserted": 206522368,
+      "duration_sec": 13509.315281321295
+    },
+    {
+      "table": "annotations_apnea",
+      "rows_inserted": 34313,
+      "duration_sec": 1.4353058570995927
+    },
+    {
+      "table": "annotations_qrs",
+      "rows_inserted": 2275788,
+      "duration_sec": 79.94337812345475
+    },
+    {
+      "table": "compression",
+      "rows_inserted": 0,
+      "duration_sec": 0.0
+    }
+  ]
+}

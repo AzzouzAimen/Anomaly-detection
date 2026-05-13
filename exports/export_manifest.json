@@ -1,0 +1,46 @@
+{
+  "generated_at": "2026-05-13T08:18:37+00:00",
+  "mode": "full",
+  "database": "both",
+  "execute": true,
+  "jobs": [
+    {
+      "database": "postgresql",
+      "container": "apnea_postgres",
+      "database_name": "apnea_db",
+      "user": "apnea_pg_user",
+      "mode": "full",
+      "output_path": "exports/postgresql/postgresql_full.dump",
+      "command": [
+        "docker",
+        "exec",
+        "apnea_postgres",
+        "pg_dump",
+        "-U",
+        "apnea_pg_user",
+        "-d",
+        "apnea_db",
+        "-Fc"
+      ]
+    },
+    {
+      "database": "timescaledb",
+      "container": "apnea_timescaledb",
+      "database_name": "apnea_ts_db",
+      "user": "apnea_ts_user",
+      "mode": "full",
+      "output_path": "exports/timescaledb/timescaledb_full.dump",
+      "command": [
+        "docker",
+        "exec",
+        "apnea_timescaledb",
+        "pg_dump",
+        "-U",
+        "apnea_ts_user",
+        "-d",
+        "apnea_ts_db",
+        "-Fc"
+      ]
+    }
+  ]
+}
