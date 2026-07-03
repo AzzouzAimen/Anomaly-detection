@@ -1,92 +1,249 @@
-# Respiratory Apnea Detection (Apnea-ECG)
+# Respiratory Apnea Detection Data Platform
 
-## Project Overview
+This repository builds a reproducible medical time-series data platform for the
+PhysioNet Apnea-ECG database. It prepares raw WFDB recordings, validates the
+processed artifacts, loads the same data model into PostgreSQL and TimescaleDB,
+then benchmarks the two storage backends for apnea-focused queries.
 
-This project builds a medical time-series benchmark dataset for respiratory apnea detection using the PhysioNet Apnea-ECG database.
+The current Sprint 2 workflow is centered on a low-disk staged pipeline: each
+record is transformed, validated, loaded into both databases, and then its large
+temporary files are removed after successful ingestion.
 
-## Dataset
+## What This Project Does
 
-- Source: PhysioNet Apnea-ECG
-- 70 recordings (~8 hours each)
-- ECG signals + apnea annotations
+- Converts Apnea-ECG WFDB signals and annotations into structured JSON/JSONL
+  artifacts.
+- Preserves raw 100 Hz ECG samples and aligns apnea labels to one-minute
+  annotation windows.
+- Handles the dataset's sparse modality split: all 70 records have ECG, but only
+  8 records include respiration and SpO2 channels.
+- Uses synthetic UTC timestamps starting at `2000-01-01 00:00:00+00` because the
+  source records provide elapsed samples rather than calendar dates.
+- Loads equivalent schemas into PostgreSQL and TimescaleDB.
+- Benchmarks ingestion, query latency, storage size, and Timescale compression.
+- Generates comparative reports, charts, and optional database export manifests.
 
-## Structure
+## Repository Layout
 
-```
+```text
 data/
-├── raw/       # original PhysioNet data (not tracked)
-└── metadata/  # generated metadata
-scripts/       # ETL + processing scripts
-database/      # DB schemas
-docs/          # reports
+  metadata/                 Generated dataset metadata tracked in git
+  raw/                      Local PhysioNet files, ignored by git
+  processed/                ETL outputs, ignored by git
+database/
+  postgresql/init/          PostgreSQL schema
+  timeseries/init/          TimescaleDB schema and hypertables
+docs/
+  sprint1/                  Architecture and database design notes
+  sprint2/                  Current implementation notes and runbook
+scripts/
+  organize_dataset.py       Move downloaded PhysioNet files into data/raw
+  generate_metadata.py      Rebuild dataset_baseline.json from raw headers
+  preview_data.py           Inspect raw files and optionally plot signals
+  etl_pipeline.py           Single-record ETL and shared ETL functions
+  run_low_disk_pipeline.py  Main Sprint 2 ETL -> validate -> dual-ingest flow
+  validate_etl.py           Validate processed artifacts
+  ingest_postgresql.py      Direct PostgreSQL loader
+  ingest_timescaledb.py     Direct TimescaleDB loader
+  benchmark_suite.py        PostgreSQL vs Timescale benchmark runner
+  generate_benchmark_report.py
+  export_databases.py
 ```
 
-## Setup
+## Prerequisites
 
-### Start Database
+- Python 3.10+
+- Docker and Docker Compose
+- Enough local disk for the raw Apnea-ECG download and staged ETL output
+
+Install the runtime packages used by the current scripts:
+
+```bash
+pip install wfdb numpy tqdm psycopg2-binary matplotlib
+```
+
+## Environment
+
+Create a local `.env` from the example file:
+
+```powershell
+Copy-Item .env.example .env
+```
+
+On macOS or Linux:
+
+```bash
+cp .env.example .env
+```
+
+Default services:
+
+- PostgreSQL: `127.0.0.1:5432`, database `apnea_db`
+- TimescaleDB: `127.0.0.1:5433`, database `apnea_ts_db`
+- Timezone: UTC
+
+If you are not on ARM64, update `DOCKER_PLATFORM` in `.env` or unset it before
+starting Docker.
+
+## Start The Databases
 
 ```bash
 docker compose up -d
 ```
 
-### Team Workflow
+This starts:
 
-1. Pull repo
-2. Download dataset locally or in Codespaces
-3. Run scripts from `/scripts`
+- `apnea_postgres` using `database/postgresql/init/01_init_postgres.sql`
+- `apnea_timescaledb` using `database/timeseries/init/01_init_timescale.sql`
 
-### Download Dataset
+The ingestion and benchmark scripts connect directly with `psycopg2`; they do
+not depend on `docker exec`.
+
+## Get The Dataset
+
+Download the PhysioNet Apnea-ECG database:
 
 ```bash
 wget -r -N -c -np https://physionet.org/files/apnea-ecg/1.0.0/
 ```
 
-This will create a nested folder like:
-
-```
-physionet.org/files/apnea-ecg/1.0.0/
-```
-
-### Organize the Dataset
-
-run the organize script to structure the data:
+Then move the WFDB files into the expected local directory:
 
 ```bash
 python scripts/organize_dataset.py
 ```
 
-### Preview Data Files
-
-Use the preview helper to inspect headers/annotations and optionally load signals:
+Optional: regenerate metadata after organizing the raw files:
 
 ```bash
-python scripts/preview_data.py --record a01
+python scripts/generate_metadata.py
 ```
 
-Optional dependencies for signal loading and plotting:
+Optional: inspect a record before running ETL:
 
 ```bash
-pip install wfdb matplotlib
+python scripts/preview_data.py --record a01 --load-signal --max-samples 1000
 ```
 
-### Create a `.env` File
+## Main Sprint 2 Workflow
 
-```env
-POSTGRES_USER=user
-POSTGRES_PASSWORD=password
-POSTGRES_DB=apnea_db
-POSTGRES_PORT=5432
-TIMESCALE_USER=user
-TIMESCALE_PASSWORD=password
-TIMESCALE_DB=apnea_ts_db
-TIMESCALE_PORT=5433
+For a full run, use the staged low-disk pipeline:
+
+```bash
+python scripts/run_low_disk_pipeline.py
 ```
 
-### 📌 Summary: Apnea-ECG Dataset Quirks & Strategy
+For a small smoke test:
 
-Keep these 4 points pinned; they dictate your entire database design:
+```bash
+python scripts/run_low_disk_pipeline.py --record a01 --max-samples 1000 --output-root data/processed/smoke_a01
+```
 
-1. **The Frequency Mismatch (100Hz vs 1-Minute):** Your ECG data has 100 rows per second (6,000 rows per minute). Your Apnea annotations (`.apn`) only have **1 label per minute**. You cannot just put them in the same table row. You will need separate tables for `Signals` and `Annotations`.
-2. **Missing Modalities (The 8 vs 62 split):** 62 records _only_ have ECG data. Only 8 records (`a01` to `a04`, `b01`, `c01` to `c03`) have the extra respiration signals (`Resp C`, `Resp A`, `Resp N`, `SpO2`). **Strategy:** Your database schema should include columns for these respiratory signals, but you will insert `NULL` for the 62 records that don't have them. This proves you know how to handle real-world sparse medical data.
-3. **Massive Data Volume:** 70 records × ~8 hours × 60 mins × 60 secs × 100 Hz = **~120 Million rows**. This is why you need TimescaleDB. Standard PostgreSQL will choke on queries over 120M rows; TimescaleDB will handle it easily using "Hypertables".
-4. **No "Real" Dates:** The records don't have real calendar dates (like `2023-10-25 14:00`). To use Time-Series databases effectively, you should assign a "fake" baseline start date to all records (e.g., `2000-01-01 00:00:00.000`) and add the elapsed milliseconds to it for your timestamp columns.
+Useful options:
+
+- `--record a01` can be repeated to process selected records.
+- `--max-samples 1000` caps signal rows for smoke testing.
+- `--keep-staging` keeps per-record staging files after successful ingestion.
+- `--compress-after-load` compresses Timescale chunks immediately after load.
+
+Expected cumulative outputs under the selected output root:
+
+- `extraction_stats.json`
+- `transformation_summary.json`
+- `cleaning_transformation_log.md`
+- `validation_report.json`
+- `postgresql_ingestion_log.json`
+- `timescaledb_ingestion_log.json`
+
+Large per-record staging files live under `<output-root>/_staging/<record>` and
+are deleted after successful validation plus dual ingestion unless
+`--keep-staging` is used.
+
+## Standalone Commands
+
+Run single-record ETL only:
+
+```bash
+python scripts/etl_pipeline.py --record a01 --output data/processed/smoke_a01 --max-samples 1000
+```
+
+Validate processed artifacts:
+
+```bash
+python scripts/validate_etl.py --processed-dir data/processed
+```
+
+Load PostgreSQL from processed artifacts:
+
+```bash
+python scripts/ingest_postgresql.py --processed-dir data/processed
+```
+
+Load TimescaleDB from processed artifacts:
+
+```bash
+python scripts/ingest_timescaledb.py --processed-dir data/processed
+```
+
+## Benchmark And Report
+
+Benchmark representative records from both multimodal and ECG-only groups:
+
+```bash
+python scripts/benchmark_suite.py --record a01 --record a05 --record b01 --processed-dir data/processed --output-dir benchmarks/raw
+```
+
+Generate report tables and charts:
+
+```bash
+python scripts/generate_benchmark_report.py --input benchmarks/raw/summary.json --output-dir benchmarks/report
+```
+
+Expected report outputs:
+
+- `benchmarks/report/comparative_report.md`
+- `benchmarks/report/throughput_summary.csv`
+- `benchmarks/report/latency_summary.csv`
+- `benchmarks/report/storage_summary.csv`
+- `benchmarks/report/*.png`
+
+## Database Exports
+
+Prepare an export manifest without running dumps:
+
+```bash
+python scripts/export_databases.py --mode full --database both --output-dir exports
+```
+
+Execute the export commands:
+
+```bash
+python scripts/export_databases.py --mode full --database both --output-dir exports --execute
+```
+
+## Dataset Notes That Affect The Design
+
+- ECG samples are high-frequency: 100 Hz, or 6,000 rows per minute.
+- Apnea annotations are minute-level, so they are stored separately from raw
+  signal samples.
+- Only 8 records include respiration and SpO2 channels; the schemas keep those
+  columns nullable for the remaining ECG-only records.
+- QRS annotations are included for derived heartbeat counts, but they are
+  machine-generated and should not be treated as manually verified labels.
+- PostgreSQL uses a conventional relational schema. TimescaleDB uses matching
+  tables plus hypertables for `signals`, `annotations_apnea`, and
+  `annotations_qrs`.
+
+## Generated And Local Files
+
+The following are intentionally ignored by git:
+
+- `data/raw/`
+- `data/processed/`
+- `.env`
+- local database dumps
+- benchmark JSON, CSV, chart, and report outputs
+- `exports/`
+
+Use `docs/sprint2/RUNBOOK.md` for the most detailed operational checklist and
+`docs/sprint2/IMPLEMENTATION_STATUS.md` for the current Sprint 2 status.
